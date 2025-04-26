@@ -1,0 +1,96 @@
+'use client';
+import React from 'react';
+import { Linkedin, Instagram, Twitter, Youtube, MapPin, Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Brand Section */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2 text-[#d1af35] mb-4">
+              <span className="text-xl font-semibold">Comfort Vecanze</span>
+            </div>
+            <p className="text-sm mb-4">
+              Redefining travel with elegance, ambition, and hospitality since 2018.
+            </p>
+            <p className="text-xs mb-6">
+              © {currentYear} Comfort Vecanze. All rights reserved.
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="hover:text-[#d1af35] transition-colors">
+                <Linkedin size={20} />
+              </a>
+              <a href="#" className="hover:text-[#d1af35] transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="hover:text-[#d1af35] transition-colors">
+                <Twitter size={20} />
+              </a>
+              <a href="#" className="hover:text-[#d1af35] transition-colors">
+                <Youtube size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Section */}
+          <div>
+            <h3 className="font-semibold text-white mb-4">Contact Us</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 mt-0.5 text-[#d1af35]" />
+                <span>Rucha Building, Office 1 & 2, Aundh-Ravet BRTS Rd, Punawale, Pune, Maharashtra 411033</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-[#d1af35]" />
+                <a href="tel:+919405393360" className="hover:text-[#d1af35] transition-colors">+91 9405393360</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="h-5 w-5 text-[#d1af35]" />
+                <a href="mailto:support@comfortvacanze.com" className="hover:text-[#d1af35] transition-colors">support@comfortvacanze.com</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Quick Links Section */}
+          <div>
+            <h3 className="font-semibold text-white mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><Link href="/" className="hover:text-[#d1af35] transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-[#d1af35] transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-[#d1af35] transition-colors">Our Services</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#d1af35] transition-colors">Gallery</Link></li>
+              <li><Link href="/contact" className="hover:text-[#d1af35] transition-colors">Contact Us</Link></li>
+            </ul>
+          </div>
+
+          {/* Company Section */}
+          <div>
+            <h3 className="font-semibold text-white mb-4">Our Network</h3>
+            <ul className="space-y-2">
+              <li><span className="text-[#d1af35]">Comfort Tours PTE. LTD</span> - Luxury Transport</li>
+              <li><span className="text-[#d1af35]">SS World Holidays</span> - Malaysia Partnership</li>
+              <li><Link href="/privacy" className="hover:text-[#d1af35] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-[#d1af35] transition-colors">Terms & Conditions</Link></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Brand Story */}
+        <div className="mt-12 pt-6 border-t border-gray-700">
+          <p className="text-sm italic text-center">
+            "Comfort Vecanze is not just a brand — it's a journey of elegance, ambition, and hospitality that redefines travel experiences. 
+            From our beginnings in 2018 to our global presence today, we craft extraordinary journeys that blend seamless service with soulful travel."
+          </p>
+          <p className="text-right mt-2 text-xs text-gray-400">- Raj Kolpe, Founder</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
