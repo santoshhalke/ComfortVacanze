@@ -231,12 +231,8 @@ const ServicesPage = () => {
 
   ];
   const [activeCountry, setActiveCountry] = useState(countries[0].id);
-  const [expandedPackage, setExpandedPackage] = useState<string | null>(null);
 
-  const togglePackage = (day: string) => {
-    setExpandedPackage(expandedPackage === day ? null : day);
-  };
-
+ 
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto mt-20">
