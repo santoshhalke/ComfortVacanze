@@ -38,14 +38,28 @@ const TravelTipsAccordion = () => {
   return (
     <motion.div className="max-w-7xl mx-auto px-4 py-12"
     transition={{ duration: 4 }}>
-      <h2 className="text-3xl font-bold text-center mb-12">Smart Travel Tips</h2>
-      
+       <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="text-3xl font-bold text-center mb-16 relative z-10"
+                      >
+                Smart Travel Tips
+                <motion.span 
+                          className="absolute left-1/2 -bottom-2 h-1 bg-[#EB7C19]"
+                          initial={{ width: 0 }}
+                          whileInView={{ width: '280px', x: '-50%' }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8, delay: 0.3 }}
+                        />
+                      </motion.h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
         {travelTips.map((tip) => (
           <motion.div
             key={tip.id}
             className={`bg-white rounded-xl shadow-md overflow-hidden border ${
-              expandedTip === tip.id ? 'border-blue-400' : 'border-gray-200'
+              expandedTip === tip.id ? 'border-[#EB7C19]' : 'border-gray-200'
             }`}
             whileHover={{ y: -5 }}
             transition={{ type: 'spring', stiffness: 300 }}
@@ -58,7 +72,7 @@ const TravelTipsAccordion = () => {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleTip(tip.id)}
               >
-                <h3 className="text-lg font-semibold">{tip.title}</h3>
+                <h3 className="text-xl font-semibold">{tip.title}</h3>
                 <motion.span
                   animate={{ rotate: expandedTip === tip.id ? 45 : 0 }}
                   className="text-2xl font-light"
@@ -76,7 +90,7 @@ const TravelTipsAccordion = () => {
                     transition={{ duration: 0.3 }}
                     className="pt-3"
                   >
-                    <p className="text-gray-600">{tip.description}</p>
+                    <p className="text-gray-600 text-justify">{tip.description}</p>
                   
                   </motion.div>
                 )}

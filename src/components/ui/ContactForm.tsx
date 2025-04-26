@@ -12,12 +12,7 @@ const ContactForm = () => {
     message: "",
   });
 
-  // const [status, setStatus] = useState({
-  //   submitting: false,
-  //   success: false,
-  //   error: false,
-  //   message: "",
-  // });
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -61,7 +56,7 @@ const ContactForm = () => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 3 }}
+      transition={{ duration: 2 }}
       className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-16 py-20 lg:my-7"
     >
       <div className="space-y-6 mt-16 ml-10 lg:ml-30">
@@ -75,7 +70,7 @@ const ContactForm = () => {
         >
           Contact us
           <motion.span
-            className="absolute left-0 -bottom-2 w-full h-1 bg-orange-500"
+            className="absolute left-0 -bottom-2 w-full h-1 bg-[#EB7C19]"
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{
@@ -180,7 +175,7 @@ const ContactForm = () => {
             // disabled={status.submitting}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full lg:w-3/4 bg-[#d1af35] hover:bg-[#d1af35] text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2"
+            className="w-full lg:w-3/4 bg-[#EB7C19] hover:bg-orange-700 text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2"
           >
             <Send className="h-5 w-5" />
             <span>Send Message</span>

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 text-[#d1af35] mb-4">
+            <div className="flex items-center gap-2 text-[#EB7C19] mb-4">
               <span className="text-xl font-semibold">Comfort Vecanze</span>
             </div>
             <p className="text-sm mb-4">
@@ -22,16 +22,16 @@ const Footer = () => {
               © {currentYear} Comfort Vecanze. All rights reserved.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-[#d1af35] transition-colors">
+              <a href="#" className="hover:text-[#EB7C19] transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-[#d1af35] transition-colors">
+              <a href="#" className="hover:text-[#EB7C19] transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-[#d1af35] transition-colors">
+              <a href="#" className="hover:text-[#EB7C19] transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:text-[#d1af35] transition-colors">
+              <a href="#" className="hover:text-[#EB7C19] transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
@@ -42,16 +42,16 @@ const Footer = () => {
             <h3 className="font-semibold text-white mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 mt-0.5 text-[#d1af35]" />
+                <MapPin className="h-5 w-5 mt-0.5 text-[#EB7C19]" />
                 <span>Rucha Building, Office 1 & 2, Aundh-Ravet BRTS Rd, Punawale, Pune, Maharashtra 411033</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-[#d1af35]" />
-                <a href="tel:+919405393360" className="hover:text-[#d1af35] transition-colors">+91 9405393360</a>
+                <Phone className="h-5 w-5 text-[#EB7C19]" />
+                <a href="tel:+919405393360" className="hover:text-[#EB7C19] transition-colors">+91 9405393360</a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-[#d1af35]" />
-                <a href="mailto:support@comfortvacanze.com" className="hover:text-[#d1af35] transition-colors">support@comfortvacanze.com</a>
+                <Mail className="h-5 w-5 text-[#EB7C19]" />
+                <a href="mailto:support@comfortvacanze.com" className="hover:text-[#EB7C19] transition-colors">support@comfortvacanze.com</a>
               </li>
             </ul>
           </div>
@@ -60,11 +60,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="hover:text-[#d1af35] transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-[#d1af35] transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-[#d1af35] transition-colors">Our Services</Link></li>
-              <li><Link href="/gallery" className="hover:text-[#d1af35] transition-colors">Gallery</Link></li>
-              <li><Link href="/contact" className="hover:text-[#d1af35] transition-colors">Contact Us</Link></li>
+              <li><Link href="/" className="hover:text-[#EB7C19] transition-colors">Home</Link></li>
+              <li><Link href="/about" className="hover:text-[#EB7C19] transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-[#EB7C19] transition-colors">Our Services</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#EB7C19] transition-colors">Gallery</Link></li>
+              <li><Link href="/contact" className="hover:text-[#EB7C19] transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -72,10 +72,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-white mb-4">Our Network</h3>
             <ul className="space-y-2">
-              <li><span className="text-[#d1af35]">Comfort Tours PTE. LTD</span> - Luxury Transport</li>
-              <li><span className="text-[#d1af35]">SS World Holidays</span> - Malaysia Partnership</li>
-              <li><Link href="/privacy" className="hover:text-[#d1af35] transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-[#d1af35] transition-colors">Terms & Conditions</Link></li>
+              <li><span className="text-[#EB7C19]">Comfort Tours PTE. LTD</span> - Luxury Transport</li>
+              <li><span className="text-[#EB7C19]">SS World Holidays</span> - Malaysia Partnership</li>
+              <li><Link href="/privacy" className="hover:text-[#EB7C19] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-[#EB7C19] transition-colors">Terms & Conditions</Link></li>
             </ul>
           </div>
         </div>

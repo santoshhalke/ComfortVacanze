@@ -42,7 +42,7 @@
 //         >
 //           What We Offer
 //         </motion.h2>
-        
+
 //         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 //           {services.map((service, index) => (
 //             <motion.div
@@ -63,41 +63,44 @@
 
 // export default ServicesSection;
 
-
-'use client';
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const services = [
   {
     title: "Hotel Booking",
-    description: "Find and book the perfect accommodation for your trip with our extensive network of hotels and resorts.",
+    description:
+      "Find and book the perfect accommodation for your trip with our extensive network of hotels and resorts.",
     image: "/images/Home/hotelbook.jpg",
     icon: "🏨",
-    color: "bg-[#DAB1DA]"
+    color: "bg-[#DAB1DA]",
   },
   {
     title: "Travel Planning",
-    description: "Custom itineraries tailored to your preferences, with expert recommendations for activities and dining.",
+    description:
+      "Custom itineraries tailored to your preferences, with expert recommendations for activities and dining.",
     image: "/images/Home/travelplan.jpg",
     icon: "🗺️",
-    color: "bg-[#90D5FF]"
+    color: "bg-[#90D5FF]",
   },
   {
     title: "Tour Guides",
-    description: "Experienced local guides to help you discover hidden gems and cultural insights at your destination.",
+    description:
+      "Experienced local guides to help you discover hidden gems and cultural insights at your destination.",
     image: "/images/Home/tourguide.jpg",
     icon: "👨‍✈️",
-    color: "bg-amber-100"
+    color: "bg-amber-100",
   },
   {
     title: "Flight Booking",
-    description: "Competitive airfare options with flexible booking policies and 24/7 customer support.",
+    description:
+      "Competitive airfare options with flexible booking policies and 24/7 customer support.",
     image: "/images/Home/flightbook.jpg",
     icon: "✈️",
-    color: "bg-purple-100"
-  }
+    color: "bg-purple-100",
+  },
 ];
 
 const ServicesSection = () => {
@@ -114,17 +117,16 @@ const ServicesSection = () => {
           className="text-3xl font-bold text-center mb-16 relative z-10"
         >
           What We Offer
-          <motion.span 
-            className="absolute left-1/2 -bottom-2 h-1 bg-orange-500"
+          <motion.span
+            className="absolute left-1/2 -bottom-2 h-1 bg-[#EB7C19]"
             initial={{ width: 0 }}
-            whileInView={{ width: '100px', x: '-50%' }}
+            whileInView={{ width: "270px", x: "-50%" }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
           />
         </motion.h2>
 
-        {/* Interactive Service Grid */}
-        {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 relative z-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 relative z-10">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -132,44 +134,27 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-              className="relative"
+              className="relative m-1"
               onMouseEnter={() => setHoveredService(index)}
               onMouseLeave={() => setHoveredService(null)}
             >
-              <div className={`${service.color} aspect-square flex flex-col items-center justify-center p-6 text-black font-semibold transition-all duration-300 ${hoveredService === index ? 'scale-105 z-20 shadow-xl' : 'scale-100'}`}>
-                <span className="text-4xl mb-4">{service.icon}</span>
-                <h3 className="text-xl font-bold text-center">{service.title}</h3>
+              <div
+                style={{ backgroundImage: `url(${service.image})` }}
+                className={`aspect-square bg-cover bg-center flex flex-col items-center justify-center p-6 text-white font-semibold transition-all duration-300 ${
+                  hoveredService === index
+                    ? "scale-105 z-20 shadow-xl"
+                    : "scale-100"
+                }`}
+              >
+                <div className=" bg-opacity-10 px-1 py-1 ">
+                  <h3 className="text-2xl font-extrabold text-white text-center">
+                    {service.title}
+                  </h3>
+                </div>
               </div>
             </motion.div>
           ))}
-        </div> */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 relative z-10">
-  {services.map((service, index) => (
-    <motion.div
-      key={index}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-      className="relative m-1"
-      onMouseEnter={() => setHoveredService(index)}
-      onMouseLeave={() => setHoveredService(null)}
-    >
-      <div
-        style={{ backgroundImage: `url(${service.image})` }}
-        className={`aspect-square bg-cover bg-center flex flex-col items-center justify-center p-6 text-white font-semibold transition-all duration-300 ${
-          hoveredService === index ? 'scale-105 z-20 shadow-xl' : 'scale-100'
-        }`}
-      >
-        <div className=" bg-opacity-10 px-1 py-1 ">
-                    <h3 className="text-2xl font-extrabold text-white text-center">{service.title}</h3>
-                  </div>
-
-      </div>
-    </motion.div>
-  ))}
-</div>
-
+        </div>
 
         {/* Animated Description Panel */}
         <AnimatePresence>

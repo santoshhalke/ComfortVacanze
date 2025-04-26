@@ -45,8 +45,23 @@ const BlogCards = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h2 className="text-3xl font-bold text-center mt-20 mb-10">Latest Blog Posts</h2>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-20">
+       <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="text-3xl font-bold text-center mb-16 relative z-10"
+                      >
+                Latest Blog Posts
+                <motion.span 
+                          className="absolute left-1/2 -bottom-2 h-1 bg-[#EB7C19]"
+                          initial={{ width: 0 }}
+                          whileInView={{ width: '280px', x: '-50%' }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8, delay: 0.3 }}
+                        />
+                      </motion.h2>
       
       <div className="grid grid-cols-1  gap-8">
         {blogPosts.map((post) => (
@@ -71,7 +86,7 @@ const BlogCards = () => {
             </div>
             <div className="p-6  w-full lg:w-3/4">
               <h3 className="text-xl font-semibold  mb-3">{post.title}</h3>
-              <p className="text-gray-600 mb-4">{post.description}</p>
+              <p className="text-gray-600 mb-4 text-justify">{post.description}</p>
               
             </div>
           </motion.div>

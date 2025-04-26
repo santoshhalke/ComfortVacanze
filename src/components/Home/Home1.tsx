@@ -1,11 +1,12 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useDragControls } from 'framer-motion';
 import Image from 'next/image';
-
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const HeroCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const controls = useDragControls();
 
   const slides = [
     {
@@ -38,7 +39,7 @@ const HeroCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -55,76 +56,63 @@ const HeroCarousel = () => {
   };
 
   return (
-    <section className="relative w-full h-screen max-h-[800px] overflow-hidden">
+    <section className="relative w-full h-[31vh] md:h-[45vh] lg:h-[91vh] overflow-hidden mt-14 lg:mt-20">
       <AnimatePresence mode='wait'>
         <motion.div
           key={slides[currentIndex].id}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
           className="relative w-full h-full"
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          onDragEnd={(e, { offset, velocity }) => {
+            if (offset.x > 100) {
+              goToPrev();
+            } else if (offset.x < -100) {
+              goToNext();
+            }
+          }}
+          dragControls={controls}
         >
           {/* Hero Image */}
           <Image
             src={slides[currentIndex].image}
             alt={slides[currentIndex].title}
             fill
-            className="object-cover"
+            className="object-cover select-none"
             priority
             quality={100}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
-          
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40 flex items-center">
-            <div className="container mx-auto px-6">
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                className="max-w-2xl text-white"
-              >
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                  {slides[currentIndex].title}
-                </h1>
-                <p className="text-xl md:text-2xl mb-8">
-                  {slides[currentIndex].subtitle}
-                </p>
-
-              </motion.div>
-            </div>
-          </div>
         </motion.div>
       </AnimatePresence>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - Visible on all screens */}
       <button 
         onClick={goToPrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-2 z-10 transition-colors"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-[#0080BF]/50 hover:bg-white rounded-full p-1 sm:p-2 z-10 transition-all duration-300 shadow-lg"
         aria-label="Previous slide"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
+        <ChevronLeft className="h-4 w-4 sm:h-6 sm:w-6 text-white hover:text-[#0080BF]/50 stroke-[3]" />
       </button>
       
       <button 
         onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 rounded-full p-2 z-10 transition-colors"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-[#0080BF]/50 hover:bg-white rounded-full p-1 sm:p-2 z-10 transition-all duration-300 shadow-lg"
         aria-label="Next slide"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
+        <ChevronRight className="h-4 w-4 sm:h-6 sm:w-6 text-white hover:text-[#0080BF]/50 stroke-[3]" />
       </button>
 
-      {/* Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+      {/* Indicators - Smaller on mobile */}
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${currentIndex === index ? 'bg-white' : 'bg-white/50'}`}
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${currentIndex === index ? 'bg-white' : 'bg-white/50'}`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

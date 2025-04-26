@@ -34,7 +34,7 @@ export const CountryTabs = ({ countries, activeCountry, onCountryChange }: Count
             onClick={() => onCountryChange(country.id)}
             className={`px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3 text-xs sm:text-sm font-semibold rounded-md shadow-gray-400 shadow-lg transition-colors ${
               activeCountry === country.id
-                ? 'bg-orange-600 text-white shadow-md'
+                ? 'bg-[#EB7C19] text-white shadow-md'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
             }`}
           >

@@ -9,7 +9,7 @@ interface DayPackage {
   includes: string[];
   excludes: string[];
   highlights?: string[];
-  image?: string; // Add image URL to your package data
+  image: string; // Add image URL to your package data
 }
 
 interface PackageCardProps {
@@ -46,7 +46,7 @@ export const PackageCard = ({ pkg }: PackageCardProps) => {
             <h3 className="text-xl font-bold text-gray-900">{pkg.name}</h3>
             <span className="text-sm text-gray-500">{pkg.day} Package</span>
           </div>
-          <p className="text-xl font-bold text-orange-600">{pkg.price}</p>
+          <p className="text-xl font-bold text-[#EB7C19]">{pkg.price}</p>
         </div>
 
         {/* Highlights (if any) */}
@@ -56,7 +56,7 @@ export const PackageCard = ({ pkg }: PackageCardProps) => {
               {pkg.highlights.map((hl, i) => (
                 <span 
                   key={i} 
-                  className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-orange-100 text-orange-800"
+                  className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-orange-100 text-[#EB7C19]"
                 >
                   {hl}
                 </span>

@@ -8,7 +8,7 @@ const Home2 = () => {
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <motion.div
             initial="hidden"
@@ -29,7 +29,7 @@ const Home2 = () => {
               }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              Innovating <span className="text-orange-600">Travel Experiences</span> Worldwide
+              Innovating <span className="text-[#EB7C19]">Travel Experiences</span> Worldwide
             </motion.h1>
             
             <motion.p 
@@ -68,7 +68,7 @@ const Home2 = () => {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange-700 transition-colors duration-200"
+                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#EB7C19] hover:bg-orange-700 transition-colors duration-200"
                 >
                   Discover Our Story
                   <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
