@@ -32,7 +32,7 @@ const ServicesPage = () => {
       name: 'Bali',
       packages: [
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '4 Days 3 Nights',
           name: '1st Package',
           price: '$89',
@@ -51,7 +51,7 @@ const ServicesPage = () => {
           
         },
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '3 Days 2 Nights',
           name: '2nd Package',
           price: '$249',
@@ -69,7 +69,7 @@ const ServicesPage = () => {
           highlights: ['Ubud Swing Tour ']
         },
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '6 Days 5 Nights',
           name: '3rd Package',
           price: '$599',
@@ -93,7 +93,7 @@ const ServicesPage = () => {
       name: 'Vietnam',
       packages: [
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '4 Days 3 Nights',
           name: '1st Package',
           price: '$129',
@@ -109,7 +109,7 @@ const ServicesPage = () => {
           ],
         },
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '5 Days 4 Nights',
           name: '2nd Package',
           price: '$799',
@@ -133,7 +133,7 @@ const ServicesPage = () => {
       name: 'Thiland',
       packages: [
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '4 Days 3 Nights',
           name: '1st Package-Krabi Tour',
           price: '$129',
@@ -149,7 +149,7 @@ const ServicesPage = () => {
           ],
         },
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '3 Days 2 Nights',
           name: '2nd Package-Phuket Tour',
           price: '$799',
@@ -173,7 +173,7 @@ const ServicesPage = () => {
       name: 'Sri Lanka',
       packages: [
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '3 Nights 4 Days',
           name: '1st Package',
           price: '$129',
@@ -190,7 +190,7 @@ const ServicesPage = () => {
           highlights: ['Culture', 'Beach','City']
         },
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '5 Days 4 nights',
           name: '2nd Package',
           price: '$799',
@@ -208,7 +208,7 @@ const ServicesPage = () => {
           highlights: ['Heritage','Tea Gardens']
         },
         {
-          image:'images/home/hero1.jpg',
+          image:'/images/home/hero1.jpg',
           day: '6 Days 5 nights',
           name: '3rd Package',
           price: '$799',
