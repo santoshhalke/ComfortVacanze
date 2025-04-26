@@ -6,8 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CountryTabs } from '@/components/Service/CountryTabs';
 import { PackageCard } from '@/components/Service/PackageCard';
 import { ExploreMoreButton } from '@/components/Service/ExploreMoreButton';
-// import { Country, DayPackage } from './types';
- // Move your countries data to a separate file
+
 
 
  export interface DayPackage {
@@ -282,8 +281,6 @@ const ServicesPage = () => {
               <PackageCard
                 key={pkg.day}
                 pkg={pkg}
-                isExpanded={expandedPackage === pkg.day}
-                onToggle={() => togglePackage(pkg.day)}
               />
             ))}
           </motion.div>

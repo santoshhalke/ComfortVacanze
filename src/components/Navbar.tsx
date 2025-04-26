@@ -1,8 +1,9 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Menu, X, GraduationCap } from 'lucide-react';
-
+import { Menu, X} from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,22 +21,22 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="flex items-center space-x-2">
-              <img src='/images/logo.jpg' className='h-15 w-32'></img>
+            <Link href="/" className="flex items-center space-x-2">
+              <Image src='/images/logo.jpg' alt="logo" className='h-15 w-32'></Image>
               
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.title}
                 href={link.href}
                 className="text-gray-600 px-3 py-2 text-sm font-medium transition-all  hover:border-b-4 hover:border-[#EC7C18]"
               >
                 {link.title}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -58,13 +59,13 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.title}
               href={link.href}
               className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-[#EC7C18] hover:bg-gray-50"
             >
               {link.title}
-            </a>
+            </Link>
           ))}
          
         </div>

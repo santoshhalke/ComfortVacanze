@@ -40,7 +40,7 @@ const Home2 = () => {
               }}
               transition={{ delay: 1, duration: 1 }}
             >
-              We're a passionate team dedicated to transforming how you explore the world. 
+              We&aposre a passionate team dedicated to transforming how you explore the world. 
               With over 7 years in the travel industry.
             </motion.p>
             

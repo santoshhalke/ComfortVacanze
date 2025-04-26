@@ -56,7 +56,7 @@ const TestimonialCard = ({
       </div>
       
       <p className="text-gray-600 italic">
-        "{description}"
+      &quot;{description}&quot;
       </p>
       
       <div className="mt-4 pt-4 flex justify-end">

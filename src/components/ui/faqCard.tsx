@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 
 const TravelTipsAccordion = () => {
   const [expandedTip, setExpandedTip] = useState<number | null>(null);
@@ -52,18 +51,7 @@ const TravelTipsAccordion = () => {
             transition={{ type: 'spring', stiffness: 300 }}
             
           >
-            {/* <div className="relative h-40 w-full">
-              <Image
-                src={tip.imageUrl}
-                alt={tip.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-              />
-              <div className="absolute top-3 left-3 bg-white/80 rounded-full w-10 h-10 flex items-center justify-center text-xl">
-                {tip.icon}
-              </div>
-            </div> */}
+         
             
             <div className="p-5">
               <div 

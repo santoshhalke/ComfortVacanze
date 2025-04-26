@@ -32,29 +32,6 @@ const AboutPage = () => {
     visible: { opacity: 1, transition: { duration: 0.8 } }
   };
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: 'Sarah Johnson',
-      role: 'Travel Expert',
-      bio: 'With 10+ years in the industry, Sarah knows all the hidden gems across Southeast Asia.',
-      image: '/team/sarah.jpg'
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      role: 'Adventure Specialist',
-      bio: 'Michael has led expeditions to over 30 countries and specializes in adventure travel.',
-      image: '/team/michael.jpg'
-    },
-    {
-      id: 3,
-      name: 'Priya Patel',
-      role: 'Cultural Guide',
-      bio: 'Priya connects travelers with authentic cultural experiences and local communities.',
-      image: '/team/priya.jpg'
-    }
-  ];
 
   return (
     <div className="bg-white">
@@ -148,10 +125,10 @@ const AboutPage = () => {
         <div className="absolute -left-10 top-1 w-6 h-6 rounded-full bg-orange-500 border-4 border-white shadow-md flex items-center justify-center">
           <div className="w-2 h-2 bg-white rounded-full" />
         </div>
-        <h3 className="text-xl font-bold text-gray-800 mb-2">2018 - The Comfort Vacanze Journey Begins</h3>
+        <h3 className="text-xl font-bold text-gray-800 mb-2">2018  &ndash; The Comfort Vacanze Journey Begins</h3>
         <p className="text-gray-600 text-justify">
           Founded as Comfort Vacanze Tours, we started with premium vehicle services built on reliability and comfort Vacanze, 
-          growing to become one of India's most trusted names in luxury transport across PAN India.
+          growing to become one of India&apos;s most trusted names in luxury transport across PAN India.
         </p>
       </motion.div>
 
@@ -166,9 +143,9 @@ const AboutPage = () => {
         <div className="absolute -left-10 top-1 w-6 h-6 rounded-full bg-orange-400 border-4 border-white shadow-md flex items-center justify-center">
           <div className="w-2 h-2 bg-white rounded-full" />
         </div>
-        <h3 className="text-xl font-bold text-gray-800 mb-2">2025 - Birth of Comfort Vacanze</h3>
+        <h3 className="text-xl font-bold text-gray-800 mb-2">2025  &ndash; Birth of Comfort Vacanze</h3>
         <p className="text-gray-600 text-justify">
-          Headquartered in Pune, India, we evolved into Comfort Vacanze - the parent company of Comfort Tours PTE. LTD. 
+          Headquartered in Pune, India, we evolved into Comfort Vacanze  &ndash; the parent company of Comfort Tours PTE. LTD. 
           With global partnerships and a refined vision, we began crafting extraordinary journeys blending seamless service 
           with soulful travel experiences.
         </p>
@@ -185,10 +162,10 @@ const AboutPage = () => {
         <div className="absolute -left-10 top-1 w-6 h-6 rounded-full bg-orange-300 border-4 border-white shadow-md flex items-center justify-center">
           <div className="w-2 h-2 bg-white rounded-full" />
         </div>
-        <h3 className="text-xl font-bold text-gray-800 mb-2">Today - Global Excellence</h3>
+        <h3 className="text-xl font-bold text-gray-800 mb-2">Today &ndash; Global Excellence</h3>
         <p className="text-gray-600 text-justify">
           Through our strategic collaboration with SS World Holidays, we now transcend borders to deliver curated 
-          travel masterpieces. Every journey reflects our passion for excellence - where luxury begins, comfort leads, 
+          travel masterpieces. Every journey reflects our passion for excellence  &ndash; where luxury begins, comfort leads, 
           and the world opens with grace.
         </p>
       </motion.div>
@@ -216,31 +193,7 @@ const AboutPage = () => {
       />
     </motion.div>
 
-    {/* Decorative Floating Images */}
-    {/* <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.4, duration: 0.6 }}
-      className="absolute -left-8 -top-8 w-32 h-32 rounded-lg overflow-hidden shadow-md border-2 border-white z-20"
-    >
-     
-    </motion.div> */}
 
-    {/* <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.6, duration: 0.6 }}
-      className="absolute -right-8 -bottom-8 w-40 h-40 rounded-lg overflow-hidden shadow-md border-2 border-white z-20"
-    >
-      <Image
-        src="/global-partnership.jpg"
-        alt="Global partnership meeting"
-        fill
-        className="object-cover"
-      />
-    </motion.div> */}
   </motion.div>
 </div>
 
@@ -297,13 +250,13 @@ const AboutPage = () => {
         </h2>
         <h3 className="text-2xl text-orange-500 font-semibold">Raj Kolpe</h3>
         <p className="text-gray-600 text-justify">
-          Raj Kolpe is the visionary behind Comfort Vecanze — a journey that began in 2018 with a mission to redefine luxury travel through trust.
+          Raj Kolpe is the visionary behind Comfort Vecanze &ndash; a journey that began in 2018 with a mission to redefine luxury travel through trust.
         </p>
         <p className="text-gray-600 text-justify">
           From founding Comfort Tours to establishing Comfort Vecanze as a global travel brand, Raj has been dedicated to crafting elegant and soulful journeys. With key partnerships like SS World Holidays, his vision now reaches far beyond borders.
         </p>
         <p className="text-gray-600 text-justify">
-          “Comfort Vecanze is more than travel. It's about grace, detail, and an unwavering commitment to hospitality.”
+        &quot;Comfort Vecanze is more than travel. It&apos;s about grace, detail, and an unwavering commitment to hospitality.&quot;
         </p>
 
       </motion.div>
@@ -312,7 +265,6 @@ const AboutPage = () => {
 </section>
 
 
-      {/* Team Section */}
       
 
       {/* Values Section */}

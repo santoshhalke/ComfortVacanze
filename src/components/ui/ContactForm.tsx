@@ -12,12 +12,12 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [status, setStatus] = useState({
-    submitting: false,
-    success: false,
-    error: false,
-    message: "",
-  });
+  // const [status, setStatus] = useState({
+  //   submitting: false,
+  //   success: false,
+  //   error: false,
+  //   message: "",
+  // });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -92,8 +92,8 @@ const ContactForm = () => {
           <div>
             <h3 className="text-lg font-semibold">Our Location</h3>
             <p className="text-gray-600 text-justify">
-              Rucha Building, Office number 1 and 2, Aundh - Ravet BRTS Rd,
-              Punawale, Pune, Maharashtra 411033
+              Rucha Building, Office number 1 and 2, Aundh &ndash; Ravet BRTS Rd,
+              Punawale, Pune, Maharashtra 411033
             </p>
           </div>
         </div>
@@ -177,22 +177,16 @@ const ContactForm = () => {
 
           <motion.button
             type="submit"
-            disabled={status.submitting}
+            // disabled={status.submitting}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="w-full lg:w-3/4 bg-[#d1af35] hover:bg-[#d1af35] text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2"
           >
             <Send className="h-5 w-5" />
-            <span>{status.submitting ? "Sending..." : "Send Message"}</span>
+            <span>Send Message</span>
           </motion.button>
 
-          {status.message && (
-            <p
-              className={`mt-2 text-sm ${status.success ? "text-green-600" : "text-red-600"}`}
-            >
-              {status.message}
-            </p>
-          )}
+     
         </div>
       </motion.form>
     </motion.div>

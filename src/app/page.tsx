@@ -1,9 +1,5 @@
-// app/page.tsx
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import TestimonialCard from "@/components/ui/Testimonials"; // Simple import
-import ServiceCard from "@/components/ui/ServiceCard";
-import { testimonials } from "@/data/testimonials";
+
+import TestimonialCard from "@/components/ui/Testimonials"; 
 import Home2 from "@/components/Home/Home2";
 import HeroCarousel from "@/components/Home/Home1"
 import DestinationsSection from "@/components/Home/Home3"
@@ -28,7 +24,7 @@ export default function Home() {
           <TestimonialCard
             name="Alex Johnson"
             rating={5}
-            description="This product has completely transformed our workflow. Highly recommended!"
+            description="This product has completely transformed our workflow. Highly recommended"
             role="CTO at TechCorp"
           />
           <TestimonialCard

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
+
 
 const HeroCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,7 +29,7 @@ const HeroCarousel = () => {
     {
       id: 4,
       title: "Sustainable Travel",
-      subtitle: "Journey responsibly with our eco-tours",
+      subtitle: "Journey responsibly with our eco tours",
       image: "/images/Home/hero4.jpg"
     }
   ];
