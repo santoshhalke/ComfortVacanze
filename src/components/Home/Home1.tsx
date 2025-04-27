@@ -11,26 +11,18 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      title: "Explore The Unknown",
-      subtitle: "Embark on a transformative journey and explore the allure of diverse cultures, landscapes, and people.",
       image: "/images/Home/hero1.jpg"
     },
     {
       id: 2,
-      title: "Moments That Matter",
-      subtitle: "Create memories with personalized travel experiences designed just for you.",
       image: "/images/Home/hero2.jpg"
     },
     {
       id: 3,
-      title: "Beyond Borders",
-      subtitle: "Discover hidden gems and connect with cultures across the world.",
       image: "/images/Home/hero3.jpg"
     },
     {
       id: 4,
-      title: "Sustainable Travel",
-      subtitle: "Journey responsibly with our eco tours",
       image: "/images/Home/hero4.jpg"
     }
   ];
@@ -67,7 +59,7 @@ const HeroCarousel = () => {
           className="relative w-full h-full"
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          onDragEnd={(e, { offset, velocity }) => {
+          onDragEnd={(e, {offset}) => {
             if (offset.x > 100) {
               goToPrev();
             } else if (offset.x < -100) {
@@ -79,7 +71,7 @@ const HeroCarousel = () => {
           {/* Hero Image */}
           <Image
             src={slides[currentIndex].image}
-            alt={slides[currentIndex].title}
+            alt="hero section image"
             fill
             className="object-cover select-none"
             priority

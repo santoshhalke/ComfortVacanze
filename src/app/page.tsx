@@ -1,5 +1,4 @@
 
-import TestimonialCard from "@/components/ui/Testimonials"; 
 import Home2 from "@/components/Home/Home2";
 import HeroCarousel from "@/components/Home/Home1"
 import DestinationsSection from "@/components/Home/Home3"

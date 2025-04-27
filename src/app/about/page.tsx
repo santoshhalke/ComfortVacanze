@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
 import About1 from "@/components/About/About1";
 import About2 from "@/components/About/About2";
 import About3 from "@/components/About/About3";

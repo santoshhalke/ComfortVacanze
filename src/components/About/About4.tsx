@@ -1,6 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
-import { containerVariants,itemVariants,fadeInVariants } from './AboutAnimation';
+import { containerVariants,itemVariants } from './AboutAnimation';
 
 const About3 = () => {
     

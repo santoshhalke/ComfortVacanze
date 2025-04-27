@@ -1,7 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { containerVariants,itemVariants,fadeInVariants } from './AboutAnimation';
+import { containerVariants,itemVariants } from './AboutAnimation';
 const About1 = () => {
    
   return (
