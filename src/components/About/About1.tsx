@@ -2,9 +2,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { containerVariants,itemVariants } from './AboutAnimation';
+import MissionVisionSection from '@/components/ui/MissionSection'
 const About1 = () => {
    
   return (
+    <>
     <section className="relative h-96 md:h-screen max-h-[800px] overflow-hidden">
             <Image
               src="/about-hero.jpg"
@@ -22,20 +24,25 @@ const About1 = () => {
               >
                 <motion.h1
                   variants={itemVariants}
-                  className="text-4xl md:text-6xl font-bold text-white mb-6"
+                  className="text-3xl md:text-5xl font-bold text-white mb-6"
                 >
-                  <span className="text-[#EB7C19]">Comfort Vacanze</span>
+                  <span className="text-[#EB7C19]">Comfort Vacanze | Corporate Group Tours & Global Events
+</span>
                 </motion.h1>
                 <motion.p
                   variants={itemVariants}
                   className="text-xl md:text-2xl text-white max-w-3xl mx-auto"
                 >
-                  A Journey Beyond Borders. A Brand Built on Trust.
+                  Where Success Meets Seamless Travel
                 </motion.p>
               </motion.div>
             </div>
           </section>
+          <section>
+<MissionVisionSection/>
+          </section>
     
+    </>
    
   );
 };

@@ -3,7 +3,38 @@ import { motion } from 'framer-motion';
 import { containerVariants,itemVariants } from './AboutAnimation';
 
 const About3 = () => {
-    
+    const corevalues=[
+      {
+        title: "Authenticity",
+        description: "We design experiences rooted in local knowledge, guaranteeing a profound cultural exploration.",
+        icon: "🌍",
+      },
+      {
+        title: "Passion",
+        description: "Our love for travel drives us to meticulously plan journeys that help guests forge enduring memories.",
+        icon: "❤️",
+      },
+      {
+        title: "Innovation",
+        description: "We leverage technology to enhance efficiency while preserving the personal touch in our customer service.",
+        icon: "💡",
+      },
+      {
+        title: "Dynamism",
+        description: "We stay attuned to emerging trends to ensure our destinations remain vibrant and captivating.",
+        icon: "🌀",
+      },
+      {
+        title: "Guest-Centricity",
+        description: "Our mission is straightforward: to deliver unforgettable experiences with a focus on guest satisfaction.",
+        icon: "⭐",
+      },
+      {
+        title: "Communication",
+        description: "Our multilingual team is at your service 24/7, ensuring clear and timely coordination.",
+        icon: "💬",
+      },
+    ]
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -32,26 +63,7 @@ const About3 = () => {
               </motion.h2>
   
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    title: "Authenticity",
-                    description:
-                      "We seek out genuine experiences that connect you with local cultures in meaningful ways.",
-                    icon: "🌍",
-                  },
-                  {
-                    title: "Sustainability",
-                    description:
-                      "We're committed to responsible travel that benefits both travelers and host communities.",
-                    icon: "♻️",
-                  },
-                  {
-                    title: "Expertise",
-                    description:
-                      "Our team's firsthand knowledge ensures you get the best possible travel experience.",
-                    icon: "✨",
-                  },
-                ].map((value, index) => (
+                {corevalues.map((value, index) => (
                   <motion.div
                     key={value.title}
                     variants={itemVariants}

@@ -5,26 +5,26 @@ import { motion } from "framer-motion";
 
 const TestimonialsPage = () => {
   const testimonials = [
+
     {
-      name: "Alex Johnson",
+      name: "Rohit Deshmukh",
       rating: 5,
       description:
-        "This product has completely transformed our workflow. Highly recommended",
-      role: "CTO at TechCorp",
+        "Comfort Vacanze made our holiday absolutely stress-free! From transport to hotels, everything was perfectly arranged. Highly recommended for a relaxed travel experience",
+  
     },
     {
-      name: "Maria Garcia",
+      name: "Priya Nair",
       rating: 4,
       description:
-        "Excellent service and the product delivers exactly what was promised.",
+        "Best tour company we’ve experienced! Professional team, great service, and amazing memories. Thank you, Comfort Vacanze, for making our trip unforgettable.",
       // role is optional
     },
     {
-      name: "James Wilson",
+      name: "Sameer Kulakarni",
       rating: 5,
       description:
-        "The best solution we've found after trying many alternatives.",
-      role: "Marketing Director",
+        "We loved every moment of our tour with Comfort Vacanze. Very well organized itineraries and friendly support throughout. Definitely booking with them again"
     },
   ];
 
@@ -54,7 +54,7 @@ const TestimonialsPage = () => {
               name={testimonial.name}
               rating={testimonial.rating}
               description={testimonial.description}
-              role={testimonial.role}
+              
             />
           ))}
         </div>

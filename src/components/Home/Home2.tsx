@@ -40,21 +40,11 @@ const Home2 = () => {
               }}
               transition={{ delay: 1, duration: 1 }}
             >
-              We&aposre a passionate team dedicated to transforming how you explore the world. 
-              With over 7 years in the travel industry.
+              Comfort Vacanze, in strategic joint venture with SS World Holidays, brings together decades of tourism expertise, strong regional presence, and a global network to redefine corporate group travel and events. Together, we design journeys that blend business objectives with rich cultural, educational, and leisure experiences &ndash creating truly world-class corporate events.
+
             </motion.p>
             
-            <motion.p 
-              className="text-lg text-gray-600 text-justify"
-              variants={{
-                hidden: { opacity: 0, x: -20 },
-                visible: { opacity: 1, x: 0 }
-              }}
-              transition={{ delay: 1.3, duration: 1.6 }}
-            >
-              Our mission is to make travel seamless, authentic, and accessible to everyone, 
-              while respecting local communities and environments.
-            </motion.p>
+          
             
             <motion.div
               className="pt-4"

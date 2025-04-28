@@ -1,28 +1,4 @@
-// // components/ui/TestimonialCard.tsx
-// import { Testimonial } from "@/data/testimonials";
-// import { Star } from "lucide-react"; // Optional: for rating stars
 
-// interface Props {
-//   testimonial: Testimonial;
-// }
-
-// const TestimonialCard = ({ testimonial }: Props) => {
-//   return (
-//     <div className="bg-white p-6 rounded-2xl shadow-md border hover:shadow-lg transition-all mx-4 min-w-[300px]">
-//       <h3 className="text-xl font-semibold mb-2">{testimonial.name}</h3>
-//       <p className="text-gray-600 mb-4">{testimonial.comment}</p>
-//       <div className="flex gap-1 text-yellow-500">
-//         {Array.from({ length: testimonial.rating }, (_, i) => (
-//           <Star key={i} className="w-4 h-3 fill-yellow-400" />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TestimonialCard;
-
-// components/TestimonialCard.tsx
 import { Star } from "lucide-react"; // or any other icon library
 
 interface TestimonialCardProps {

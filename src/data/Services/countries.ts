@@ -7,7 +7,7 @@
           image: "/images/Services/bali/bali1.jpg",
           day: "4 Days 3 Nights",
           name: "1st Package",
-          price: "$89",
+          price: "$199",
           includes: [
             "Airport transfers",
             "Grand Palace tour",
@@ -21,7 +21,7 @@
           image: "/images/Services/bali/bali2.jpg",
           day: "3 Days 2 Nights",
           name: "2nd Package",
-          price: "$249",
+          price: "$266",
           includes: [
             "2 nights hotel (3-star)",
             "All transfers",
@@ -33,10 +33,10 @@
           highlights: ["Ubud Swing Tour "],
         },
         {
-          image: "/images/Services/bali/bali3.jpg",
+          image: "/images/Services/bali/bali4.jpg",
           day: "6 Days 5 Nights",
           name: "3rd Package",
-          price: "$599",
+          price: "$334",
           includes: [
             "6 nights accommodation",
             "Phuket & Krabi tours",
@@ -46,6 +46,21 @@
           ],
           excludes: ["International flights", "Scuba diving fees"],
           highlights: ["Tegenungan Waterfall"],
+        }, 
+        {
+          image: "/images/Services/bali/bali2.jpg",
+          day: "7 Days 6 Nights",
+          name: "4th Package",
+          price: "$399",
+          includes: [
+            "2 nights hotel (3-star)",
+            "All transfers",
+            "Chiang Rai temples",
+            "Golden Triangle tour",
+            "Meals as per itinerary",
+          ],
+          excludes: ["International flights", "Personal expenses"],
+          highlights: ["ULUWATU KECAK FIRE DANCE"],
         },
       ],
     },
@@ -122,7 +137,7 @@
       name: "Sri Lanka",
       packages: [
         {
-          image: "/images/home/hero1.jpg",
+          image: "/images/Services/srilanka/srilanka1.jpg",
           day: "3 Nights 4 Days",
           name: "1st Package",
           price: "$129",
@@ -136,7 +151,7 @@
           highlights: ["Culture", "Beach", "City"],
         },
         {
-          image: "/images/home/hero1.jpg",
+          image: "/images/Services/srilanka/srilanka2.jpg",
           day: "5 Days 4 nights",
           name: "2nd Package",
           price: "$799",
@@ -151,7 +166,7 @@
           highlights: ["Heritage", "Tea Gardens"],
         },
         {
-          image: "/images/home/hero1.jpg",
+          image: "/images/Services/srilanka/srilanka3.jpg",
           day: "6 Days 5 nights",
           name: "3rd Package",
           price: "$799",
@@ -166,7 +181,7 @@
           highlights: ["Glimpse of Sri Lanka"],
         },
         {
-          image: "/images/home/hero1.jpg",
+          image: "/images/Services/srilanka/srilanka4.jpg",
           day: "8 Days 7 nights",
           name: "4th Package",
           price: "$799",
@@ -181,7 +196,7 @@
           highlights: ["Across Island Tour"],
         },
         {
-          image: "/images/home/hero1.jpg",
+          image: "/images/Services/srilanka/srilanka5.jpg",
           day: "8 Days 7 nights",
           name: "4th Package",
           price: "$799",

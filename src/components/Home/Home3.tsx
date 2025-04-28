@@ -11,24 +11,24 @@ const DestinationsSection = () => {
   const destinations = [
     {
       id: 1,
-      name: "Bali, Indonesia",
+      name: "Indonesia",
       image: "/images/Home/bali.jpg",
       description:
         "A tropical escape known for its lush jungles, serene temples, and vibrant beach life.",
     },
     {
       id: 2,
-      name: "Krabi, Thailand",
+      name: "Thailand",
       image: "/images/Home/krabi.jpg",
       description:
         "Home to stunning limestone cliffs, turquoise waters, and peaceful island vibes.",
     },
     {
       id: 3,
-      name: "Sri Lanka",
-      image: "/images/Home/beruwalaSrilanka.jpg",
+      name: "Malaysia",
+      image: "/images/Home/malaysia.jpg",
       description:
-        "A cultural gem filled with ancient ruins, scenic tea hills, and exotic wildlife adventures.",
+        "Malaysia is a Southeast Asian country known for its diverse culture, vibrant cities, and breathtaking natural beauty",
     },
     {
       id: 4,
@@ -39,10 +39,10 @@ const DestinationsSection = () => {
     },
     {
       id: 5,
-      name: "Phuket, Thailand",
-      image: "/images/Home/phuket.jpg",
+      name: "Singapore",
+      image: "/images/Home/singapore.jpg",
       description:
-        "Thailand’s largest island offering golden beaches, lively nightlife, and luxury retreats.",
+        "Singapore is a vibrant island city-state in Southeast Asia, known for its stunning skyline, diverse culture",
     },
   ];
 
@@ -93,7 +93,7 @@ const DestinationsSection = () => {
           />
         </motion.h2>
         {/* Navigation Arrows */}
-        {scrollPosition > 0 && (
+      
           <button
             onClick={scrollLeft}
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg z-10 transition-all"
@@ -114,9 +114,9 @@ const DestinationsSection = () => {
               />
             </svg>
           </button>
-        )}
+   
 
-        {scrollPosition < destinations.length - 4 && (
+       
           <button
             onClick={scrollRight}
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg z-10 transition-all"
@@ -137,7 +137,7 @@ const DestinationsSection = () => {
               />
             </svg>
           </button>
-        )}
+      
 
         {/* Cards Container */}
         <div ref={containerRef} className="relative overflow-x-hidden">
@@ -149,7 +149,7 @@ const DestinationsSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-                className="relative flex-shrink-0 w-[300px]"
+                className="relative flex-shrink-0 w-[250px]"
               >
                 <motion.div
                   className={`bg-white rounded-4xl shadow-md overflow-hidden cursor-pointer h-full ${expandedCard === destination.id ? "ring-2 ring-[#EB7C19]" : ""}`}

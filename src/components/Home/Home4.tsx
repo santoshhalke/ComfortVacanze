@@ -70,34 +70,34 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Hotel Booking",
+    title: "Venue Selection and Setup",
     description:
-      "Find and book the perfect accommodation for your trip with our extensive network of hotels and resorts.",
-    image: "/images/Home/hotelbook.jpg",
+      "Elite conference centers, tropical retreats, historical landmarks — tailored to the event's purpose and tone.",
+    image: "/images/Home/travelplan.jpg",
     icon: "🏨",
     color: "bg-[#DAB1DA]",
   },
   {
-    title: "Travel Planning",
+    title: "Logistics and Transportation",
     description:
-      "Custom itineraries tailored to your preferences, with expert recommendations for activities and dining.",
-    image: "/images/Home/travelplan.jpg",
+      "Complete travel arrangements, visa facilitation, VIP handling, airport transfers, and local ground transport",
+    image: "/images/Home/flightbook.jpg",
     icon: "🗺️",
     color: "bg-[#90D5FF]",
   },
   {
-    title: "Tour Guides",
+    title: "Cultural and Experiential Events",
     description:
-      "Experienced local guides to help you discover hidden gems and cultural insights at your destination.",
-    image: "/images/Home/tourguide.jpg",
+      "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives — crafted with local authenticity.",
+    image: "/images/Home/culturalevent.jpg",
     icon: "👨‍✈️",
     color: "bg-amber-100",
   },
   {
-    title: "Flight Booking",
+    title: "Team-Building Activities",
     description:
-      "Competitive airfare options with flexible booking policies and 24/7 customer support.",
-    image: "/images/Home/flightbook.jpg",
+      "Engage teams through yacht races, desert safaris, mountain treks, culinary battles, and more — all designed to foster leadership and collaboration.",
+    image: "/images/Home/tourguide.jpg",
     icon: "✈️",
     color: "bg-purple-100",
   },
