@@ -99,7 +99,7 @@ const ContactForm = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold">Email Us</h3>
-            <p className="text-gray-600">support@comfortvacanze.com</p>
+            <p className="text-gray-600">enquiry@comfortvacanze.com</p>
           </div>
         </div>
 
@@ -109,7 +109,7 @@ const ContactForm = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold">Call Us</h3>
-            <p className="text-gray-600">+91 9405393360</p>
+            <p className="text-gray-600">+91 8177888020</p>
           </div>
         </div>
       </div>
