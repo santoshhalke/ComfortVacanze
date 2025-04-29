@@ -26,14 +26,14 @@ const About1 = () => {
                   variants={itemVariants}
                   className="text-3xl md:text-5xl font-bold text-white mb-6"
                 >
-                  <span className="text-[#EB7C19]">Comfort Vacanze | Corporate Group Tours & Global Events
+                  <span className="text-[#EB7C19]">Comfort Vacanze 
 </span>
                 </motion.h1>
                 <motion.p
                   variants={itemVariants}
                   className="text-xl md:text-2xl text-white max-w-3xl mx-auto"
                 >
-                  Where Success Meets Seamless Travel
+                   A Journey Beyond Borders. A Brand Built on Trust.
                 </motion.p>
               </motion.div>
             </div>

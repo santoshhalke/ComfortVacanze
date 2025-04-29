@@ -15,14 +15,14 @@ const BlogCards = () => {
       id: 2,
       title: ' Explore Kandy &ndash; The Cultural Heart of Sri Lanka',
       description: `Kandy is a peaceful city surrounded by hills and greenery. It&apos; home to the famous Temple of the Tooth and beautiful botanical gardens. You can enjoy a calm walk around Kandy Lake or visit traditional dance shows. It&apos; a great place to experience Sri Lanka&apos; rich culture.`,
-      imageUrl: '/images/Blog/kandy1.jpg',
+      imageUrl: '/images/Blog/kandy.jpg',
       date: 'June 2, 2023'
     },
     {
       id: 3,
       title: 'Sigiriya &ndash; Climb the Lion Rock Fortress',
       description: 'Sigiriya is one of Sri Lanka&apos; most famous landmarks. Climbing the ancient rock fortress gives you amazing views and a look into royal history. The gardens, frescoes, and sky palace at the top are incredible. Its a must-visit for anyone who loves history and nature.',
-      imageUrl: '/images/Blog/sigiriya.jpg',
+      imageUrl: '/images/Blog/sigiriya2.jpg',
       date: 'June 18, 2023'
     }
  
