@@ -10,6 +10,21 @@ const DestinationsSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const destinations = [
+    
+    {
+      id: 5,
+      name: "Singapore",
+      image: "/images/Home/singapore.jpg",
+      description:
+        "Singapore is a vibrant island city-state in Southeast Asia, known for its stunning skyline, diverse culture",
+    },
+    {
+      id: 4,
+      name: "Vietnam",
+      image: "/images/Home/vietnam2.jpg",
+      description:
+        "A land of contrast with bustling cities, quiet rice fields, and rich historical charm.",
+    },
     {
       id: 1,
       name: "Indonesia",
@@ -31,20 +46,7 @@ const DestinationsSection = () => {
       description:
         "Malaysia is a Southeast Asian country known for its diverse culture, vibrant cities, and breathtaking natural beauty",
     },
-    {
-      id: 4,
-      name: "Vietnam",
-      image: "/images/Home/vietnam2.jpg",
-      description:
-        "A land of contrast with bustling cities, quiet rice fields, and rich historical charm.",
-    },
-    {
-      id: 5,
-      name: "Singapore",
-      image: "/images/Home/singapore2.jpg",
-      description:
-        "Singapore is a vibrant island city-state in Southeast Asia, known for its stunning skyline, diverse culture",
-    },
+   
   ];
 
   useEffect(() => {
