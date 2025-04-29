@@ -94,7 +94,7 @@ const GITPage = () => {
           >
             <h2 className="text-3xl font-bold text-[#EB7C19] mb-6">Journey Together, Experience More</h2>
             <p className="text-lg md:text-xl leading-relaxed">
-              At Comfort Vacanze, we believe travel is more than movement . it's about connection, discovery, and unforgettable memories. Our Group Inclusive Tours are designed to deliver smooth, enriching journeys for leisure groups, corporate teams, educational institutions, and special interest travelers.
+              At Comfort Vacanze, we believe travel is more than movement . it&apos about connection, discovery, and unforgettable memories. Our Group Inclusive Tours are designed to deliver smooth, enriching journeys for leisure groups, corporate teams, educational institutions, and special interest travelers.
             </p>
           </div>
         </div>

@@ -126,7 +126,7 @@ const MICEpage = () => {
               className="bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto"
             >
               <p className="text-lg md:text-xl leading-relaxed text-center">
-                At Comfort Vacanze, we design and deliver corporate events that inspire, engage, and elevate. Across the world's top destinations, we turn strategic goals into extraordinary experiences — with precision, creativity, and professionalism.
+                At Comfort Vacanze, we design and deliver corporate events that inspire, engage, and elevate. Across the world&apos top destinations, we turn strategic goals into extraordinary experiences — with precision, creativity, and professionalism.
               </p>
             </div>
           </div>

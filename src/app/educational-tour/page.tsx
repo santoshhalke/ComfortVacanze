@@ -249,7 +249,7 @@ const EduTourismPage = () => {
           >
             <motion.div variants={fadeIn} className="text-center mb-12">
               <h2 className="text-3xl font-bold text-[#EB7C19] mb-3">Key Learning Locations</h2>
-              <p className="text-gray-600">Malaysia's vibrant educational destinations</p>
+              <p className="text-gray-600">Malaysia&apos vibrant educational destinations</p>
             </motion.div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -410,14 +410,14 @@ const EduTourismPage = () => {
               variants={fadeIn}
               className="text-xl mb-8"
             >
-              Let us create a customized educational tour that brings your curriculum to life in Malaysia's vibrant learning landscape.
+              Let us create a customized educational tour that brings your curriculum to life in Malaysia&apos vibrant learning landscape.
             </motion.p>
             
             <motion.p 
               variants={fadeIn}
               className="mt-8 text-white/90"
             >
-              Malaysia's Gateway to World-Class Educational Experiences
+              Malaysia&apos Gateway to World-Class Educational Experiences
             </motion.p>
           </motion.div>
         </div>
