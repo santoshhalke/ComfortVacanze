@@ -86,7 +86,7 @@ const services = [
     color: "bg-[#90D5FF]",
   },
   {
-    title: "Cultural and Experiential Events",
+    title: "Cultural & Experiential Events",
     description:
       "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives — crafted with local authenticity.",
     image: "/images/Home/culturalevent.jpg",
@@ -147,7 +147,7 @@ const ServicesSection = () => {
                 }`}
               >
                 <div className=" bg-opacity-10 px-1 py-1 ">
-                  <h3 className="text-2xl font-extrabold text-white text-center">
+                  <h3 className="text-xl font-semibold text-white text-center">
                     {service.title}
                   </h3>
                 </div>
