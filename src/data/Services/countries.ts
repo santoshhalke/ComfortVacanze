@@ -33,7 +33,7 @@
           highlights: ["Ubud Swing Tour "],
         },
         {
-          image: "/images/Services/bali/bali4.jpg",
+          image: "/images/Services/bali/package3.jpg",
           day: "6 Days 5 Nights",
           name: "3rd Package",
           price: "$334",
@@ -72,7 +72,7 @@
           image: "/images/Services/vietnam/vietnam1.jpg",
           day: "4 Days 3 Nights",
           name: "1st Package",
-          price: "$129",
+          price: "$568",
           includes: [
             "Shibuya Crossing tour",
             "Meiji Shrine visit",
@@ -80,12 +80,15 @@
             "Local guide",
           ],
           excludes: ["Hotel accommodation", "Evening activities"],
+          highlights: ["Ha noi city tour "],
+
         },
+
         {
           image: "/images/Services/vietnam/vietnam2.jpg",
           day: "5 Days 4 Nights",
           name: "2nd Package",
-          price: "$799",
+          price: "$704",
           includes: [
             "4 nights accommodation",
             "Tokyo & Kyoto tours",
@@ -94,8 +97,24 @@
             "Daily breakfast",
           ],
           excludes: ["International flights", "Optional activities"],
-          highlights: ["City Tour "],
+          highlights: ["Ho chi minh","Mekong delta","Cu chi tunnels "],
         },
+        {
+          image: "/images/Services/vietnam/vietnam3.jpg",
+          day: "5 Days 4 Nights",
+          name: "3rd  Package",
+          price: "$678",
+          includes: [
+            "4 nights accommodation",
+            "Tokyo & Kyoto tours",
+            "Bullet train transfer",
+            "Fushimi Inari visit",
+            "Daily breakfast",
+          ],
+          excludes: ["International flights", "Optional activities"],
+          highlights: ["Ho chi minh","Da nang"],
+        },
+
       ],
     },
     {
@@ -114,6 +133,8 @@
             "Local guide",
           ],
           excludes: ["Hotel accommodation", "Evening activities"],
+          highlights: [ "Islands tour"],
+
         },
         {
           image: "/images/Services/thiland/krabi2.jpg",
@@ -140,7 +161,7 @@
           image: "/images/Services/srilanka/srilanka1.jpg",
           day: "3 Nights 4 Days",
           name: "1st Package",
-          price: "$129",
+          price: "$800",
           includes: [
             "Shibuya Crossing tour",
             "Meiji Shrine visit",
@@ -154,7 +175,7 @@
           image: "/images/Services/srilanka/srilanka2.jpg",
           day: "5 Days 4 nights",
           name: "2nd Package",
-          price: "$799",
+          price: "$1202",
           includes: [
             "4 nights accommodation",
             "Tokyo & Kyoto tours",
@@ -169,7 +190,7 @@
           image: "/images/Services/srilanka/srilanka3.jpg",
           day: "6 Days 5 nights",
           name: "3rd Package",
-          price: "$799",
+          price: "$1477",
           includes: [
             "4 nights accommodation",
             "Tokyo & Kyoto tours",
@@ -184,7 +205,7 @@
           image: "/images/Services/srilanka/srilanka4.jpg",
           day: "8 Days 7 nights",
           name: "4th Package",
-          price: "$799",
+          price: "$1843",
           includes: [
             "4 nights accommodation",
             "Tokyo & Kyoto tours",
@@ -199,7 +220,7 @@
           image: "/images/Services/srilanka/srilanka5.jpg",
           day: "8 Days 7 nights",
           name: "4th Package",
-          price: "$799",
+          price: "$1769",
           includes: [
             "4 nights accommodation",
             "Tokyo & Kyoto tours",

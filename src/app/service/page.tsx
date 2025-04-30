@@ -66,7 +66,7 @@ const ServicesPage = () => {
           </motion.div>
         </AnimatePresence>
       </div>
-      <ExploreMoreButton />
+
     </div>
   );
 };
