@@ -55,7 +55,7 @@ const MissionVisionSection = () => {
             </div>
             <p className="text-gray-600 text-lg leading-relaxed">
               To create the best travel experience for our customers by offering
-              high quality service to exceed our clients&apos expectations and to
+              high quality service to exceed our clients expectations and to
               maintain high performing team that constantly displays competence.
             </p>
           </motion.div>

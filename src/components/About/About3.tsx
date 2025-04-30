@@ -50,18 +50,18 @@ const About3 = () => {
                     Raj Kolpe
                   </h3>
                   <p className="text-gray-600 text-justify">
-                    Raj Kolpe is the visionary behind Comfort Vecanze &ndash; a
+                    Raj Kolpe is the visionary behind Comfort Vacanze &ndash; a
                     journey that began in 2018 with a mission to redefine luxury
                     travel through trust.
                   </p>
                   <p className="text-gray-600 text-justify">
-                    From founding Comfort Tours to establishing Comfort Vecanze as a
+                    From founding Comfort Tours to establishing Comfort Vacanze as a
                     global travel brand, Raj has been dedicated to crafting elegant
                     and soulful journeys. With key partnerships like SS World
                     Holidays, his vision now reaches far beyond borders.
                   </p>
                   <p className="text-gray-600 text-justify">
-                    &quot;Comfort Vecanze is more than travel. It&apos;s about
+                    &quot;Comfort Vacanze is more than travel. It&apos;s about
                     grace, detail, and an unwavering commitment to
                     hospitality.&quot;
                   </p>

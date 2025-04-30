@@ -13,13 +13,13 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 text-[#EB7C19] mb-4">
-              <span className="text-xl font-semibold">Comfort Vecanze</span>
+              <span className="text-xl font-semibold">Comfort Vacanze</span>
             </div>
             <p className="text-sm mb-4">
               Redefining travel with elegance, ambition, and hospitality since 2018.
             </p>
             <p className="text-xs mb-6">
-              © {currentYear} Comfort Vecanze. All rights reserved.
+              © {currentYear} Comfort Vacanze. All rights reserved.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-[#EB7C19] transition-colors">
@@ -43,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-0.5 text-[#EB7C19]" />
-                <span>Rucha Building, Office 1 & 2, Aundh-Ravet BRTS Rd, Punawale, Pune, Maharashtra 411033</span>
+                <span>Rucha Building, Office 1 & 2, Aundh-Ravet BRTS Rd, Punawale, Pune, Maharashtra &ndash; 411033, India</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#EB7C19]" />
@@ -83,7 +83,7 @@ const Footer = () => {
         {/* Brand Story */}
         <div className="mt-12 pt-6 border-t border-gray-700">
           <p className="text-sm italic text-center">
-            "Comfort Vecanze is not just a brand — it's a journey of elegance, ambition, and hospitality that redefines travel experiences. 
+            "Comfort Vacanze is not just a brand — it's a journey of elegance, ambition, and hospitality that redefines travel experiences. 
             From our beginnings in 2018 to our global presence today, we craft extraordinary journeys that blend seamless service with soulful travel."
           </p>
           <p className="text-right mt-2 text-xs text-gray-400">- Raj Kolpe, Founder</p>

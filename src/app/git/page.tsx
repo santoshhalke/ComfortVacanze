@@ -18,13 +18,13 @@ const GITPage = () => {
 
   const services = [
     { icon: "✈", title: "Flight Booking", description: "International and domestic arrangements" },
-    { icon: "🏨", title: "Hotel Accommodation", description: "Carefully selected group &ndash friendly properties" },
+    { icon: "🏨", title: "Hotel Accommodation", description: "Carefully selected group - friendly properties" },
     { icon: "🚍", title: "Ground Transport", description: "Comfortable coaches and transfers" },
     { icon: "🍴", title: "Meal Arrangements", description: "Special dietary options available" },
     { icon: "🏛", title: "Sightseeing", description: "Curated excursion planning" },
     { icon: "🎟", title: "Event Ticketing", description: "Attractions and special access" },
-    { icon: "🧑‍🤝‍🧑", title: "Tour Leaders", description: "Professional on &ndash ground support" },
-    { icon: "🌐", title: "Multi Country", description: "Seamless cross &ndash border tours" }
+    { icon: "🧑‍🤝‍🧑", title: "Tour Leaders", description: "Professional on - ground support" },
+    { icon: "🌐", title: "Multi Country", description: "Seamless cross - border tours" }
   ];
 
   const destinations = [
@@ -94,7 +94,7 @@ const GITPage = () => {
           >
             <h2 className="text-3xl font-bold text-[#EB7C19] mb-6">Journey Together, Experience More</h2>
             <p className="text-lg md:text-xl leading-relaxed">
-              At Comfort Vacanze, we believe travel is more than movement . it&apos about connection, discovery, and unforgettable memories. Our Group Inclusive Tours are designed to deliver smooth, enriching journeys for leisure groups, corporate teams, educational institutions, and special interest travelers.
+              At Comfort Vacanze, we believe travel is more than movement . it&apos;s about connection, discovery, and unforgettable memories. Our Group Inclusive Tours are designed to deliver smooth, enriching journeys for leisure groups, corporate teams, educational institutions, and special interest travelers.
             </p>
           </div>
         </div>

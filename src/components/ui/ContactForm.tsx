@@ -88,7 +88,7 @@ const ContactForm = () => {
             <h3 className="text-lg font-semibold">Our Location</h3>
             <p className="text-gray-600 text-justify">
               Rucha Building, Office number 1 and 2, Aundh &ndash; Ravet BRTS Rd,
-              Punawale, Pune, Maharashtra 411033
+              Punawale, Pune, Maharashtra  &ndash; 411033, India
             </p>
           </div>
         </div>

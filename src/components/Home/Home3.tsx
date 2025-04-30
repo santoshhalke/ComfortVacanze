@@ -136,7 +136,7 @@ const DestinationsSection = () => {
             <button
               onClick={scrollLeft}
               disabled={scrollPosition === 0}
-              className={`absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg z-10 transition-all ${scrollPosition === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-lg z-10 transition-all ${scrollPosition === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
               aria-label="Scroll left"
             >
               <svg
@@ -158,7 +158,7 @@ const DestinationsSection = () => {
             <button
               onClick={scrollRight}
               disabled={scrollPosition >= destinations.length - visibleCards}
-              className={`absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg z-10 transition-all ${scrollPosition >= destinations.length - visibleCards ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`absolute right-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-lg z-10 transition-all ${scrollPosition >= destinations.length - visibleCards ? 'opacity-50 cursor-not-allowed' : ''}`}
               aria-label="Scroll right"
             >
               <svg
@@ -189,7 +189,7 @@ const DestinationsSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-                className="relative flex-shrink-0 w-[310px] md:w-[250px]"
+                className="relative flex-shrink-0 w-[290px] md:w-[250px] mx-5"
               >
                 <motion.div
                   className={`bg-white rounded-4xl shadow-md overflow-hidden cursor-pointer h-full ${expandedCard === destination.id ? "ring-2 ring-[#EB7C19]" : ""}`}

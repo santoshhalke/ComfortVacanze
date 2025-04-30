@@ -146,8 +146,8 @@ const CorporatePage = () => {
               {[
                 "Powerful Joint Venture Expertise",
                 "Global Office Network",
-                "World&ndashClass DMC Partnerships",
-                "Tailor&ndashMade Solutions",
+                `World-Class DMC Partnerships`,
+                "Tailor-Made Solutions",
                 "Multicultural Diversity",
                 "End to End Services"
               ].map((item, index) => (
@@ -190,7 +190,7 @@ const CorporatePage = () => {
                 className="bg-white/10 p-8 rounded-lg backdrop-blur-sm"
               >
                 <h3 className="text-xl font-semibold mb-4">Regional Strength + Global Impact</h3>
-                <p>Comfort Vacanze&apos s Southeast Asian offices and SS World Holidays international experience guarantee flawless, regionally aligned delivery.</p>
+                <p>Comfort Vacanze&apos;s Southeast Asian offices and SS World Holidays international experience guarantee flawless, regionally aligned delivery.</p>
               </motion.div>
               
               <motion.div 
@@ -206,7 +206,7 @@ const CorporatePage = () => {
                 className="bg-white/10 p-8 rounded-lg backdrop-blur-sm"
               >
                 <h3 className="text-xl font-semibold mb-4">Custom Crafted Packages</h3>
-                <p>No generic tours &nadsh every event and itinerary is thoughtfully designed to align with corporate identity and goals.</p>
+                <p>No generic tours &ndash; every event and itinerary is thoughtfully designed to align with corporate identity and goals.</p>
               </motion.div>
               
               <motion.div 
@@ -327,7 +327,7 @@ const CorporatePage = () => {
               variants={fadeIn}
               className="mt-8 italic text-blue-200"
             >
-              Your vision, our expertise  &ndash together, we create journeys that spark success.
+              Your vision, our expertise  &ndash; together, we create journeys that spark success.
             </motion.p>
           </motion.div>
         </div>

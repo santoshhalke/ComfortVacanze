@@ -417,7 +417,7 @@ const EduTourismPage = () => {
               variants={fadeIn}
               className="mt-8 text-white/90"
             >
-              Malaysia&apos Gateway to World-Class Educational Experiences
+              Malaysia&apos;s Gateway to World-Class Educational Experiences
             </motion.p>
           </motion.div>
         </div>

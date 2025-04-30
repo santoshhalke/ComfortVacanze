@@ -19,7 +19,7 @@
         },
         {
           image: "/images/Services/bali/bali2.jpg",
-          day: "3 Days 2 Nights",
+          day: "5 Days 4 Nights",
           name: "2nd Package",
           price: "$266",
           includes: [
