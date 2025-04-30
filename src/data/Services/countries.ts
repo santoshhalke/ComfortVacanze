@@ -48,7 +48,7 @@
           highlights: ["Tegenungan Waterfall"],
         }, 
         {
-          image: "/images/Services/bali/bali2.jpg",
+          image: "/images/Services/bali/bali4.jpg",
           day: "7 Days 6 Nights",
           name: "4th Package",
           price: "$399",
@@ -60,7 +60,7 @@
             "Meals as per itinerary",
           ],
           excludes: ["International flights", "Personal expenses"],
-          highlights: ["ULUWATU KECAK FIRE DANCE"],
+          highlights: ["Uluwatu kecak fire dance"],
         },
       ],
     },

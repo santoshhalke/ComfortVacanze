@@ -59,7 +59,7 @@ const ContactForm = () => {
       transition={{ duration: 2 }}
       className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-16 py-20 lg:my-7"
     >
-      <div className="space-y-6 mt-16 ml-10 lg:ml-30">
+      <div className="space-y-6 mt-16 ml-10 lg:ml-30 mr-10 lg:mr-0">
         <motion.h1
           className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight ml-15 relative inline-block"
           variants={{
