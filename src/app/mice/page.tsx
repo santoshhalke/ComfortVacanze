@@ -88,19 +88,19 @@ const MICEpage = () => {
           >
             <motion.h1 
               variants={fadeIn}
-              className="text-4xl md:text-6xl font-bold mb-4"
+              className="text-4xl md:text-6xl font-bold mb-3 mt-5 lg:mt-0"
             >
               Comfort Vacanze
             </motion.h1>
             <motion.p 
               variants={fadeIn}
-              className="text-xl md:text-2xl mb-8"
+              className="text-xl md:text-2xl mb-8 font semibold"
             >
               Global MICE Excellence
             </motion.p>
             <motion.p 
               variants={fadeIn}
-              className="text-2xl md:text-3xl font-light italic"
+              className="text-xl md:text-xl font-medium italic mt-3"
             >
               Meetings, Incentives, Conferences, Exhibitions — Perfectly Delivered
             </motion.p>

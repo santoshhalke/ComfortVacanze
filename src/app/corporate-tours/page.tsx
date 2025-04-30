@@ -58,7 +58,7 @@ const CorporatePage = () => {
       <section className="relative  text-white py-20 md:py-32 overflow-hidden">
         <motion.div 
          
-          className="absolute inset-0"
+          className="absolute inset-0 "
         >
           <Image 
             src="/images/CorporateTours/corporate-tours.jpg" 
@@ -68,7 +68,7 @@ const CorporatePage = () => {
           />
         </motion.div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative mt-5 lg:mt-0">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -77,19 +77,19 @@ const CorporatePage = () => {
           >
             <motion.h1 
               variants={fadeIn}
-              className="text-4xl md:text-6xl font-bold mb-4"
+              className="text-4xl md:text-6xl font-bold mb-3"
             >
               Comfort Vacanze
             </motion.h1>
             <motion.p 
               variants={fadeIn}
-              className="text-xl md:text-2xl mb-8"
+              className="text-xl md:text-2xl mb-8 font semibold"
             >
               Corporate Group Tours & Global Events
             </motion.p>
             <motion.p 
               variants={fadeIn}
-              className="text-2xl md:text-3xl font-light italic"
+              className="text-xl md:text-xl font-medium italic mt-3"
             >
               Where Success Meets Seamless Travel
             </motion.p>

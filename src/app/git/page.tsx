@@ -57,7 +57,7 @@ const GITPage = () => {
           className="object-cover"
         />
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 mt-5 lg:mt-0">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -66,19 +66,19 @@ const GITPage = () => {
           >
             <motion.h1 
               variants={fadeIn}
-              className="text-4xl md:text-6xl font-bold mb-4"
+              className="text-4xl md:text-6xl font-bold mb-3"
             >
               Comfort Vacanze
             </motion.h1>
             <motion.p 
               variants={fadeIn}
-              className="text-xl md:text-2xl mb-8"
+              className="text-xl md:text-2xl mb-8 font semibold"
             >
               Group Inclusive Tours (GIT)
             </motion.p>
             <motion.p 
               variants={fadeIn}
-              className="text-2xl md:text-3xl font-light italic"
+              className="text-xl md:text-xl font-medium italic mt-3"
             >
               Connecting People Through Seamless Travel Experiences
             </motion.p>
