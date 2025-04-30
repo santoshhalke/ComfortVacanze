@@ -2,64 +2,19 @@
 
 import { motion } from "framer-motion";
 import { Send, MapPin, Mail, Phone } from "lucide-react";
-import { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // setStatus({ submitting: true, success: false, error: false, message: "" });
-
-    // try {
-    //   const res = await fetch("/api/contact", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(formData),
-    //   });
-
-    //   if (res.ok) {
-    //     setFormData({ name: "", email: "", subject: "", message: "" });
-    //     setStatus({
-    //       submitting: false,
-    //       success: true,
-    //       error: false,
-    //       message: "Message sent successfully!",
-    //     });
-    //   } else {
-    //     throw new Error("Something went wrong");
-    //   }
-    // } catch (error) {
-    //   setStatus({
-    //     submitting: false,
-    //     success: false,
-    //     error: true,
-    //     message: "Failed to send message.",
-    //   });
-    // }
-  };
+  const [state, handleSubmit] = useForm("manoqlqd"); 
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:px-16 py-20 lg:my-7"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-8  py-20 lg:my-7 lg:ml-20"
     >
-      <div className="space-y-6 mt-16 ml-10 lg:ml-30 mr-10 lg:mr-0">
+      <div className="space-y-6 mt-16 ml-10 mr-10">
         <motion.h1
           className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight ml-15 relative inline-block"
           variants={{
@@ -74,7 +29,7 @@ const ContactForm = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{
-              delay: 1.2, // Starts after the heading animation
+              delay: 1.2,
               duration: 0.6,
               ease: "easeOut",
             }}
@@ -114,76 +69,155 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <motion.form
-        onSubmit={handleSubmit}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-        className="bg-white p-15"
-      >
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">
-          Send Us a Message
-        </h2>
+      {state.succeeded ? (
+       <motion.div
+       initial={{ opacity: 0, scale: 0.8 }}
+       animate={{ opacity: 1, scale: 1 }}
+       transition={{ duration: 0.5 }}
+       className="bg-white p-8 rounded-lg shadow-lg   mt-10 text-center mx-8 lg:mx-auto"
+     >
+       <motion.div
+         initial={{ scale: 0 }}
+         animate={{ scale: 1 }}
+         transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
+         className="mb-6"
+       >
+         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+           <svg
+             xmlns="http://www.w3.org/2000/svg"
+             className="h-12 w-12 text-green-500"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor"
+             strokeWidth={2}
+           >
+             <path
+               strokeLinecap="round"
+               strokeLinejoin="round"
+               d="M5 13l4 4L19 7"
+             />
+           </svg>
+         </div>
+       </motion.div>
+       
+       <motion.h2
+         initial={{ y: 20, opacity: 0 }}
+         animate={{ y: 0, opacity: 1 }}
+         transition={{ delay: 0.4 }}
+         className="text-3xl font-bold text-gray-800 mb-3"
+       >
+         Thank You!
+       </motion.h2>
+       
+       <motion.p
+         initial={{ y: 20, opacity: 0 }}
+         animate={{ y: 0, opacity: 1 }}
+         transition={{ delay: 0.5 }}
+         className="text-gray-600 mb-6 text-lg"
+       >
+         Your message has been sent successfully. We'll get back to you soon.
+       </motion.p>
+       
+       <motion.div
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         transition={{ delay: 0.8 }}
+         className="flex justify-center"
+       >
+         <button
+           onClick={() => window.location.reload()} // Optional: Add a button to send another message
+           className="px-6 py-2 bg-[#EB7C19] text-white rounded-md hover:bg-orange-600 transition-colors"
+         >
+           Send Another Message
+         </button>
+       </motion.div>
+     </motion.div>
+      ) : (
+        <motion.form
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="bg-white mt-20 mx-8 lg:mx-auto"
+        >
+          <h2 className="text-2xl font-bold mb-6 text-gray-800">
+            Send Us a Message
+          </h2>
 
-        <div className="space-y-4">
-          <input
-            id="name"
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
-            placeholder="Your Name"
-          />
+          <div className="space-y-4">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
+              placeholder="Your Name"
+            />
+            <ValidationError 
+              prefix="Name" 
+              field="name"
+              errors={state.errors}
+              className="text-red-500 text-sm"
+            />
 
-          <input
-            id="email"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
-            placeholder="Email Address"
-          />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
+              placeholder="Email Address"
+            />
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
+              className="text-red-500 text-sm"
+            />
 
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-            className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
-            placeholder="Subject"
-          />
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              required
+              className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
+              placeholder="Subject"
+            />
+            <ValidationError 
+              prefix="Subject" 
+              field="subject"
+              errors={state.errors}
+              className="text-red-500 text-sm"
+            />
 
-          <textarea
-            id="message"
-            name="message"
-            rows={4}
-            value={formData.message}
-            onChange={handleChange}
-            required
-            className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
-            placeholder="Your Message"
-          />
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              required
+              className="w-full lg:w-3/4 px-4 py-2 border border-gray-300 focus:ring-2 focus:ring-[#d1af35] focus:border-[#d1af35] transition-all"
+              placeholder="Your Message"
+            />
+            <ValidationError 
+              prefix="Message" 
+              field="message"
+              errors={state.errors}
+              className="text-red-500 text-sm"
+            />
 
-          <motion.button
-            type="submit"
-            // disabled={status.submitting}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full lg:w-3/4 bg-[#EB7C19] hover:bg-orange-700 text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2"
-          >
-            <Send className="h-5 w-5" />
-            <span>Send Message</span>
-          </motion.button>
-
-     
-        </div>
-      </motion.form>
+            <motion.button
+              type="submit"
+              disabled={state.submitting}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full lg:w-3/4 bg-[#EB7C19] hover:bg-orange-700 text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2"
+            >
+              <Send className="h-5 w-5" />
+              <span>{state.submitting ? 'Sending...' : 'Send Message'}</span>
+            </motion.button>
+          </div>
+        </motion.form>
+      )}
     </motion.div>
   );
 };

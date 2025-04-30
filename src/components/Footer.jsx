@@ -22,18 +22,15 @@ const Footer = () => {
               © {currentYear} Comfort Vacanze. All rights reserved.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-[#EB7C19] transition-colors">
+              <Link href="https://www.linkedin.com/company/comfort-vacanze/" className="hover:text-[#EB7C19] transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="hover:text-[#EB7C19] transition-colors">
+              </Link>
+              <Link href="https://www.instagram.com/comfortvacanze?igsh=dDcweng2eDNzMTNx" className="hover:text-[#EB7C19] transition-colors">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-[#EB7C19] transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-[#EB7C19] transition-colors">
+              </Link>
+              <Link href="https://youtube.com/@comfortvacanze?si=YgufCnjCPQ2AjtX8" className="hover:text-[#EB7C19] transition-colors">
                 <Youtube size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -71,10 +68,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-white mb-4">Our Network</h3>
             <ul className="space-y-2">
-              <li><span className="text-[#EB7C19]">Comfort Tours PTE. LTD</span> - Luxury Transport</li>
+              <li><span className="text-[#EB7C19]">Comfort Tours PTE. LTD.</span> - Luxury Transport</li>
               <li><span className="text-[#EB7C19]">SS World Holidays</span> - Malaysia Partnership</li>
-              <li><Link href="/privacy" className="hover:text-[#EB7C19] transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-[#EB7C19] transition-colors">Terms & Conditions</Link></li>
+              <li><Link href="#" className="hover:text-[#EB7C19] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="#" className="hover:text-[#EB7C19] transition-colors">Terms & Conditions</Link></li>
             </ul>
           </div>
         </div>

@@ -219,7 +219,7 @@
         {
           image: "/images/Services/srilanka/srilanka5.jpg",
           day: "8 Days 7 nights",
-          name: "4th Package",
+          name: "5th Package",
           price: "$1769",
           includes: [
             "4 nights accommodation",
