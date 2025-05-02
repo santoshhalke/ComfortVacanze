@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CountryTabs } from "@/components/Service/CountryTabs";
 import { PackageCard } from "@/components/Service/PackageCard";
 import { countriesData} from "@/data/Services/countries";
+
+
 export interface DayPackage {
   day: string;
   name: string;

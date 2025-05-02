@@ -5,7 +5,7 @@ import { Send, MapPin, Mail, Phone } from "lucide-react";
 import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("manoqlqd"); 
+  const [state, handleSubmit] = useForm("xyzwekee"); 
 
   return (
     <motion.div
