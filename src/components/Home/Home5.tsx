@@ -21,7 +21,7 @@ const TestimonialsPage = () => {
       // role is optional
     },
     {
-      name: "Sameer Kulkarni, Nagpur",
+      name: "Vijay Kulkarni, Nagpur",
       rating: 5,
       description:
         "We loved every moment of our tour with Comfort Vacanze. Very well organized itineraries and friendly support throughout. Definitely booking with them again"

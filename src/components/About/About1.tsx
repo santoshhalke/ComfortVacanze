@@ -9,7 +9,7 @@ const About1 = () => {
     <>
     <section className="relative h-96 md:h-screen max-h-[800px] overflow-hidden">
             <Image
-              src="/about-hero.jpg"
+              src="/images/About/aboutus-hero.jpg"
               alt="Travel adventure"
               fill
               className="object-cover"

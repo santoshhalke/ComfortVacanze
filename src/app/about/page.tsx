@@ -20,7 +20,7 @@ const AboutPage = () => {
      
 
       {/* Founder Section */}
-     <About3/>
+ 
 
       {/* Values Section */}
       <About4/>

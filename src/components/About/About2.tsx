@@ -89,7 +89,7 @@ const About2 = () => {
                       </h3>
                       <p className="text-gray-600 text-justify">
                         Headquartered in Pune, India, we evolved into Comfort
-                        Vacanze &ndash; the parent company of Comfort Tours PTE.
+                        Vacanze &ndash; the parent company of Comfort Tours PVT.
                         LTD. With global partnerships and a refined vision, we began
                         crafting extraordinary journeys blending seamless service
                         with soulful travel experiences.
@@ -132,10 +132,10 @@ const About2 = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="absolute inset-0 rounded-xl overflow-hidden shadow-xl z-10 border-4 border-white"
+                    className="absolute inset-0 overflow-hidden z-10 border-white"
                   >
                     <Image
-                      src="/about-office.jpg"
+                      src="/images/About/about2.jpg"
                       alt="Comfort Vacanze headquarters"
                       fill
                       className="object-cover"

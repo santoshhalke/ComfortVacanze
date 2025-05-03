@@ -30,7 +30,7 @@ const CorporateTours4 = () => {
     
    <>
     {/* Global Experiences */}
-    <section className="py-16 bg-gray-50">
+    {/* <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -70,7 +70,7 @@ const CorporateTours4 = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-[#EB7C19] to-[#EB7C19] text-white">
@@ -83,7 +83,7 @@ const CorporateTours4 = () => {
           >
             <motion.h2 
               variants={fadeIn}
-              className="text-3xl md:text-4xl font-bold mb-6"
+              className="text-2xl md:text-3xl font-semibold mb-6"
             >
               Corporate Travel Made Effortless
             </motion.h2>

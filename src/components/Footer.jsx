@@ -59,8 +59,11 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-[#EB7C19] transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-[#EB7C19] transition-colors">About Us</Link></li>
-              <li><Link href="/service" className="hover:text-[#EB7C19] transition-colors">Our Services</Link></li>
               <li><Link href="/contact" className="hover:text-[#EB7C19] transition-colors">Contact Us</Link></li>
+              <li><Link href="/blog" className="hover:text-[#EB7C19] transition-colors">Blog</Link></li>
+              <li><Link href="/service" className="hover:text-[#EB7C19] transition-colors">Our Services</Link></li>
+
+
             </ul>
           </div>
 
@@ -68,7 +71,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-white mb-4">Our Network</h3>
             <ul className="space-y-2">
-              <li><span className="text-[#EB7C19]">Comfort Tours PTE. LTD.</span> - Luxury Transport</li>
+              <li><span className="text-[#EB7C19]">Comfort Tours PVT. LTD.</span> - Luxury Transport</li>
               <li><span className="text-[#EB7C19]">SS World Holidays</span> - Malaysia Partnership</li>
               <li><Link href="#" className="hover:text-[#EB7C19] transition-colors">Privacy Policy</Link></li>
               <li><Link href="#" className="hover:text-[#EB7C19] transition-colors">Terms & Conditions</Link></li>
@@ -77,13 +80,7 @@ const Footer = () => {
         </div>
 
         {/* Brand Story */}
-        <div className="mt-12 pt-6 border-t border-gray-700">
-          <p className="text-sm italic text-center">
-            "Comfort Vacanze is not just a brand — it's a journey of elegance, ambition, and hospitality that redefines travel experiences. 
-            From our beginnings in 2018 to our global presence today, we craft extraordinary journeys that blend seamless service with soulful travel."
-          </p>
-          <p className="text-right mt-2 text-xs text-gray-400">- Raj Kolpe, Founder</p>
-        </div>
+     
       </div>
     </footer>
   );

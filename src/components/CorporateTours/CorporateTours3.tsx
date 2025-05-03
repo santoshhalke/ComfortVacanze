@@ -19,27 +19,27 @@ const CorporateTours3 = () => {
         {
           title: "Venue Selection",
           icon: "🏨",
-          description: "Elite conference centers to tropical retreats"
+          description: "Elite conference centers, tropical retreats, historical landmarks &mdash; tailored to the event&apos;s purpose and tone."
         },
         {
           title: "Logistics",
           icon: "🚐",
-          description: "Complete travel arrangements & VIP handling"
+          description: "Complete travel arrangements, visa facilitation, VIP handling, airport transfers, and local ground transport."
         },
         {
           title: "Cultural Events",
           icon: "🎉",
-          description: "Themed gala dinners & authentic experiences"
+          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives &mdash; crafted with local authenticity."
         },
         {
           title: "Team Building",
           icon: "👥",
-          description: "Adventure activities fostering collaboration"
+          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives &mdash; crafted with local authenticity."
         },
         {
           title: "Global Compliance",
           icon: "🌎",
-          description: "Visa support & multilingual services"
+          description: "Visa support, insurance coordination, safety measures, and multilingual services &mdash; ensuring stress-free travel for global teams."
         }
       ];
     
