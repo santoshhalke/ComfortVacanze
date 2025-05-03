@@ -92,7 +92,7 @@ const EducationalTours2 = () => {
               },
               {
                 title: "Enrichment Beyond Borders:",
-                desc: "Blending academic visits with cultural experiences across Malaysia&apos;s vibrant cities and heritage sites."
+                desc: "Blending academic visits with cultural experiences across Malaysia's vibrant cities and heritage sites."
               }
             ].map((item, index) => (
               <motion.div
