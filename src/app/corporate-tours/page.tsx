@@ -76,7 +76,7 @@ const CorporateTours = () => {
                  Strategic Partnership
                </h2>
             <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
-              <p className="text-lg md:text-xl leading-relaxed">
+              <p className="text-lg md:text-xl leading-relaxed text-center">
                 Comfort Vacanze, in strategic joint venture with SS World Holidays, brings together decades of tourism expertise, strong regional presence, and a global network to redefine corporate group travel and events. Together, we design journeys that blend business objectives with rich cultural, educational, and leisure experiences &mdash; creating truly world-class corporate events.
               </p>
             </div>
@@ -124,7 +124,7 @@ const CorporateTours = () => {
                 },
                 {
                   title: "End-to-End Services",
-                  desc: "Venue booking, logistics, visa processing, local transport, entertainment, team-building activities &mdash; all managed under one expert umbrella."
+                  desc: "Venue booking, logistics, visa processing, local transport, entertainment, team-building activities -; all managed under one expert umbrella."
                 }
               ].map((item, index) => (
                 <motion.div
