@@ -84,7 +84,7 @@ const EducationalTours2 = () => {
               },
               {
                 title: "Seamless Tour Management:",
-                desc: "Flights, visas, accommodation, transport, meals, insurance &mdash; professionally coordinated."
+                desc: "Flights, visas, accommodation, transport, meals, insurance - professionally coordinated."
               },
               {
                 title: "Safe, Structured, Supportive:",
