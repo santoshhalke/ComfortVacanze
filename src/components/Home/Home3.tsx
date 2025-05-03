@@ -35,7 +35,7 @@ const DestinationsSection = () => {
     {
       id: 2,
       name: "Thailand",
-      image: "/images/Home/thiland2.jpg",
+      image: "/images/Home/thiland.jpg",
       description:
         "Home to stunning limestone cliffs, turquoise waters, and peaceful island vibes.",
     },

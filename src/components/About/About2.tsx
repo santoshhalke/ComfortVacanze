@@ -2,9 +2,18 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { containerVariants,itemVariants,fadeInVariants } from './AboutAnimation';
-
+import { useEffect,useState } from 'react';
 const About2 = () => {
-   
+  const text = "TRAVEL";
+  const [visibleLetters, setVisibleLetters] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisibleLetters((prev) => (prev >= text.length ? 0 : prev + 1));
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -123,25 +132,40 @@ const About2 = () => {
     
                 {/* Image Gallery with Interactive Effect */}
                 <motion.div
-                  variants={fadeInVariants}
-                  className="lg:col-span-2 relative h-80 md:h-[500px]"
-                >
-                  {/* Main Image */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="absolute inset-0 overflow-hidden z-10 border-white"
-                  >
-                    <Image
-                      src="/images/About/about2.jpg"
-                      alt="Comfort Vacanze headquarters"
-                      fill
-                      className="object-cover"
-                    />
-                  </motion.div>
-                </motion.div>
+  variants={fadeInVariants}
+  className="lg:col-span-2 relative h-80 md:h-[500px]"
+>
+  {/* Main Image */}
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+    className="absolute inset-0 overflow-hidden z-10 border-white"
+  >
+    <Image
+      src="/images/About/travel-pune.jpg"
+      alt="Comfort Vacanze headquarters"
+      fill
+      className="object-cover"
+    />
+    
+    {/* Travel Text Overlay */}
+    <div className="text-center z-20">
+          {text.split('').map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: index < visibleLetters ? 1 : 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl md:text-5xl font-bold text-[#EB7C19]  drop-shadow-lg ml-3"
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </div>
+  </motion.div>
+</motion.div>
               </div>
     
               {/* Floating decorative elements */}

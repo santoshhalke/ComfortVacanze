@@ -11,20 +11,29 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "/images/Home/hero3.jpg"
+      image: "/images/Home/home3.jpg",
+      title: "Explore The Unknown",
+      subtitle: "Embark on a transformative journey and explore the allure of diverse cultures, landscapes, and people.",
     },
     {
       id: 2,
-      image: "/images/Home/home1.jpg"
+      image: "/images/Home/home1.jpg",
+      title: "Moments That Matter",
+      subtitle: "Create memories with personalized travel experiences designed just for you.",
     },
     {
       id: 3,
-      image: "/images/Home/home2.jpg"
+      image: "/images/Home/home2.jpg",
+      title: "Beyond Borders",
+      subtitle: "Discover hidden gems and connect with cultures across the world.",
     },
     {
       id: 4,
-      image: "/images/Home/home4.jpg"
-    }
+      image: "/images/Home/home4.jpg",
+      title: "Sustainable Travel",
+      subtitle: "Journey responsibly with our eco-tours",
+    },
+   
   ];
 
   // Auto-rotate slides every 5 seconds
@@ -48,7 +57,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <section className="relative w-full lg:w-full h-[31vh] md:h-[45vh] lg:h-[90vh] overflow-hidden mt-14 lg:mt-20">
+    <section className="relative w-full h-[31vh] md:h-[45vh] lg:h-[89vh] overflow-hidden mt-20">
       <AnimatePresence mode='wait'>
         <motion.div
           key={slides[currentIndex].id}
@@ -78,6 +87,16 @@ const HeroCarousel = () => {
             quality={100}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
+          
+          {/* Text overlay */}
+          <div className="absolute left-8 lg:left-25 bottom-1/4 md:bottom-1/3 bz-10 text-white">
+            <h1 className="text-2xl md:text-5xl font-bold mb-2  drop-shadow-4xl">
+              {slides[currentIndex].title}
+            </h1>
+            <p className="text-sm md:text-2xl font-semibold drop-shadow-lg">
+              {slides[currentIndex].subtitle}
+            </p>
+          </div>
         </motion.div>
       </AnimatePresence>
 

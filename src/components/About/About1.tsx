@@ -26,7 +26,7 @@ const About1 = () => {
                   variants={itemVariants}
                   className="text-3xl md:text-5xl font-bold text-white mb-6"
                 >
-                  <span className="text-[#EB7C19]">Comfort Vacanze 
+                  <span className="text-white">Comfort Vacanze 
 </span>
                 </motion.h1>
                 <motion.p

@@ -14,7 +14,7 @@ export default function Home() {
 <ServicesSection/>
 <TestimonialsPage/>   
 <Link
-        href="https://wa.me/8177888020" // Replace with your actual WhatsApp number
+        href="https://wa.me/7020021251" // Replace with your actual WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg transition duration-300 ease-in-out"
