@@ -116,7 +116,7 @@ const CorporateTours = () => {
                 },
                 {
                   title: "Tailor-Made Solutions",
-                  desc: "Custom event programs reflecting each company&apos;s goals, culture, and strategic vision."
+                  desc: "Custom event programs reflecting each company's goals, culture, and strategic vision."
                 },
                 {
                   title: "Multicultural Diversity",
