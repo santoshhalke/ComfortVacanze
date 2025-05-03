@@ -92,7 +92,7 @@ const EducationalTours3 = () => {
           >
             <motion.div variants={fadeIn} className="text-center mb-12">
               <h2 className="text-3xl font-bold text-[#EB7C19] mb-3">Key Learning Locations</h2>
-              <p className="text-gray-600">Malaysia&apos vibrant educational destinations</p>
+              <p className="text-gray-600">Malaysia&apos;s vibrant educational destinations</p>
             </motion.div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
