@@ -19,7 +19,7 @@ const CorporateTours3 = () => {
         {
           title: "Venue Selection",
           icon: "🏨",
-          description: "Elite conference centers, tropical retreats, historical landmarks &mdash; tailored to the event&apos;s purpose and tone."
+          description: "Elite conference centers, tropical retreats, historical landmarks - tailored to the event&apos;s purpose and tone."
         },
         {
           title: "Logistics",
@@ -29,17 +29,17 @@ const CorporateTours3 = () => {
         {
           title: "Cultural Events",
           icon: "🎉",
-          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives &mdash; crafted with local authenticity."
+          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives - crafted with local authenticity."
         },
         {
           title: "Team Building",
           icon: "👥",
-          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives &mdash; crafted with local authenticity."
+          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives - crafted with local authenticity."
         },
         {
           title: "Global Compliance",
           icon: "🌎",
-          description: "Visa support, insurance coordination, safety measures, and multilingual services &mdash; ensuring stress-free travel for global teams."
+          description: "Visa support, insurance coordination, safety measures, and multilingual services - ensuring stress-free travel for global teams."
         }
       ];
     

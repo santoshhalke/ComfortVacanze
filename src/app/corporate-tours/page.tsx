@@ -185,7 +185,7 @@ const CorporateTours = () => {
                 className="bg-white/10 p-8 rounded-lg backdrop-blur-sm"
               >
                 <h3 className="text-xl font-semibold mb-4">Custom Crafted Packages:</h3>
-                <p>No generic tours &mdash; every event and itinerary is thoughtfully designed to align with corporate identity and goals.</p>
+                <p>No generic tours &ndash; every event and itinerary is thoughtfully designed to align with corporate identity and goals.</p>
               </motion.div>
               
               <motion.div 
@@ -332,7 +332,7 @@ const CorporateTours = () => {
               variants={fadeIn}
               className="mt-8 italic text-blue-200"
             >
-              Your vision, our expertise &mdash; together, we create journeys that spark success.
+              Your vision, our expertise &ndash; together, we create journeys that spark success.
             </motion.p>
 
             <motion.button
