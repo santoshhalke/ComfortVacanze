@@ -93,8 +93,7 @@ const Mice4 = () => {
               variants={fadeIn}
               className="text-xl mb-8 max-w-3xl mx-auto"
             >
-              From intimate executive meetings to global conferences, we deliver world-class MICE experiences that drive business success.
-            </motion.p>
+From corporate boardrooms to destination retreats — we craft experiences that drive success.            </motion.p>
             
           
             

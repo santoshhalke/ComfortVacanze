@@ -103,15 +103,9 @@ const EducationalTours4 = () => {
               variants={fadeIn}
               className="text-xl mb-8"
             >
-              Let us create a customized educational tour that brings your curriculum to life in Malaysia&apos vibrant learning landscape.
-            </motion.p>
+Through strong industry partnerships and structured academic collaborations, Comfort Vacanze transforms Malaysia into a vibrant, living classroom for students worldwide            </motion.p>
             
-            <motion.p 
-              variants={fadeIn}
-              className="mt-8 text-white/90"
-            >
-              Malaysia&apos;s Gateway to World-Class Educational Experiences
-            </motion.p>
+          
           </motion.div>
         </div>
       </section>

@@ -90,17 +90,12 @@ const Git4 = () => {
                variants={fadeIn}
                className="text-xl mb-8"
              >
-               Let us handle the logistics while you focus on creating unforgettable experiences together.
-             </motion.p>
+From planning to execution, Comfort Vacanze ensures every group journey is stress &ndash; free, well &ndash; organized, and memorable.
+We manage the details, so you can enjoy the experience.             </motion.p>
              
             
              
-             <motion.p 
-               variants={fadeIn}
-               className="mt-8 text-white/90"
-             >
-               Groups of 10+ travelers receive special benefits and discounts
-             </motion.p>
+            
            </motion.div>
          </div>
        </section>

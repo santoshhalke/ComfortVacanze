@@ -39,45 +39,62 @@ const Git2 = () => {
  
        {/* Value Propositions */}
        <section className="py-16 bg-white">
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <motion.div
-             initial="hidden"
-             whileInView="visible"
-             viewport={{ once: true }}
-             variants={staggerContainer}
-           >
-             <motion.h2 
-               variants={fadeIn}
-               className="text-3xl font-bold text-center mb-12 text-[#EB7C19]"
-             >
-               Why Choose Our Group Tours
-             </motion.h2>
-             
-             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-               {[
-                 "Expert group handling for 10 &ndash 500+ travelers",
-                 "End to end logistics coordination",
-                 "Custom itineraries matching group interests",
-                 "Global network of trusted partners",
-                 "24/7 multilingual support",
-                 "Competitive group pricing"
-               ].map((item, index) => (
-                 <motion.div
-                   key={index}
-                   variants={fadeIn}
-                   whileHover={{ scale: 1.03 }}
-                   className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#EB7C19] shadow-sm"
-                 >
-                   <div className="flex items-start">
-                     <span className="text-2xl text-[#EB7C19] mr-4">✓</span>
-                     <h3 className="text-lg font-semibold">{item}</h3>
-                   </div>
-                 </motion.div>
-               ))}
-             </div>
-           </motion.div>
-         </div>
-       </section>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+        >
+          <motion.h2 
+            variants={fadeIn}
+            className="text-3xl font-bold text-center mb-12 text-[#EB7C19]"
+          >
+            Why Choose Comfort Vacanze for GIT?
+          </motion.h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Expert Group Handling:",
+                desc: "Customized tours for small to large groups, with dedicated group management."
+              },
+              {
+                title: "Seamless Logistics:",
+                desc: "Flight bookings, visa arrangements, ground transport, accommodation, meals - all coordinated under one roof."
+              },
+              {
+                title: "Tailor-Made Itineraries:",
+                desc: "Flexible programs crafted to fit your group-interests, budget, and pace."
+              },
+              {
+                title: "Global Destinations:",
+                desc: "From Asia to Europe to the Americas- Comfort Vacanze connects your group to the world."
+              },
+              {
+                title: "Experienced Tour Managers:",
+                desc: "Professional guides ensure smooth operations and personalized care throughout the journey."
+              }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                variants={fadeIn}
+                whileHover={{ scale: 1.03 }}
+                className="bg-gray-50 rounded-xl p-6 border-l-4 border-[#EB7C19] shadow-sm"
+              >
+                <div className="flex items-start">
+                  <span className="text-2xl text-[#EB7C19] mr-4">✓</span>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-600">{item.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
  
        {/* Services */}
        <section className="py-16 bg-gray-50">

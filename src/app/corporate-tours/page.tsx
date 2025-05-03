@@ -69,6 +69,12 @@ const CorporateTours = () => {
             viewport={{ once: true }}
             variants={staggerContainer}
           >
+            <h2 
+                 
+                 className="text-3xl font-bold text-center mb-12 text-[#EB7C19]"
+               >
+                 Strategic Partnership
+               </h2>
             <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
               <p className="text-lg md:text-xl leading-relaxed">
                 Comfort Vacanze, in strategic joint venture with SS World Holidays, brings together decades of tourism expertise, strong regional presence, and a global network to redefine corporate group travel and events. Together, we design journeys that blend business objectives with rich cultural, educational, and leisure experiences &mdash; creating truly world-class corporate events.

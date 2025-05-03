@@ -10,7 +10,7 @@ const TestimonialsPage = () => {
       name: "Rohit Deshmukh, Mumbai",
       rating: 5,
       description:
-        "Comfort Vacanze made our holiday absolutely stress-free! From transport to hotels, everything was perfectly arranged. Highly recommended for a relaxed travel experience",
+        "Comfort Vacanze made our holiday absolutely stress-free! From transport to hotels, everything was perfectly arranged. Highly recommended for a relaxed travel experience.",
   
     },
     {
@@ -24,7 +24,7 @@ const TestimonialsPage = () => {
       name: "Vijay Kulkarni, Nagpur",
       rating: 5,
       description:
-        "We loved every moment of our tour with Comfort Vacanze. Very well organized itineraries and friendly support throughout. Definitely booking with them again"
+        "We loved every moment of our tour with Comfort Vacanze. Very well organized itineraries and friendly support throughout. Definitely booking with them again."
     },
   ];
 
