@@ -17,13 +17,13 @@ const CorporateTours4 = () => {
     
 
     
-      const experiences = [
-        { region: "Middle East", activities: ["Desert adventures", "Luxury gala nights"] },
-        { region: "Europe", activities: ["Vineyard tours", "Castle stays", "Culinary masterclasses"] },
-        { region: "Asia", activities: ["Cultural immersions", "Temple visits"] },
-        { region: "Tropical", activities: ["Private island incentives"] },
-        { region: "Adventure", activities: ["Safaris", "Skiing", "Rainforest explorations"] }
-      ];
+      // const experiences = [
+      //   { region: "Middle East", activities: ["Desert adventures", "Luxury gala nights"] },
+      //   { region: "Europe", activities: ["Vineyard tours", "Castle stays", "Culinary masterclasses"] },
+      //   { region: "Asia", activities: ["Cultural immersions", "Temple visits"] },
+      //   { region: "Tropical", activities: ["Private island incentives"] },
+      //   { region: "Adventure", activities: ["Safaris", "Skiing", "Rainforest explorations"] }
+      // ];
 
   return (
     
