@@ -46,7 +46,6 @@ export const PackageCard = ({ pkg }: PackageCardProps) => {
             <h3 className="text-xl font-bold text-gray-900">{pkg.name}</h3>
             <span className="text-sm text-gray-500">{pkg.day} Package</span>
           </div>
-          <p className="text-xl font-bold text-[#EB7C19]">{pkg.price}</p>
         </div>
 
         {/* Highlights (if any) */}

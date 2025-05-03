@@ -11,19 +11,19 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "/images/Home/hero1.jpg"
-    },
-    {
-      id: 2,
-      image: "/images/Home/hero2.jpg"
-    },
-    {
-      id: 3,
       image: "/images/Home/hero3.jpg"
     },
     {
+      id: 2,
+      image: "/images/Home/home1.jpg"
+    },
+    {
+      id: 3,
+      image: "/images/Home/home2.jpg"
+    },
+    {
       id: 4,
-      image: "/images/Home/hero4.jpg"
+      image: "/images/Home/home4.jpg"
     }
   ];
 
@@ -48,7 +48,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <section className="relative w-full lg:w-[1510px] h-[31vh] md:h-[45vh] lg:h-[650px] overflow-hidden mt-14 lg:mt-20">
+    <section className="relative w-full lg:w-full h-[31vh] md:h-[45vh] lg:h-[90vh] overflow-hidden mt-14 lg:mt-20">
       <AnimatePresence mode='wait'>
         <motion.div
           key={slides[currentIndex].id}
