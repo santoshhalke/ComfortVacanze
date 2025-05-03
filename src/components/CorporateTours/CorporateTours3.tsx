@@ -34,7 +34,8 @@ const CorporateTours3 = () => {
         {
           title: "Team Building",
           icon: "👥",
-          description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives - crafted with local authenticity."
+          description: "Engage teams through yacht races, desert safaris, mountain treks, culinary battles, and more — all designed to foster leadership and collaboration."
+
         },
         {
           title: "Global Compliance",
