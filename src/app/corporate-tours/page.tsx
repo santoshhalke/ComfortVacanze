@@ -124,7 +124,7 @@ const CorporateTours = () => {
                 },
                 {
                   title: "End-to-End Services",
-                  desc: "Venue booking, logistics, visa processing, local transport, entertainment, team-building activities -; all managed under one expert umbrella."
+                  desc: "Venue booking, logistics, visa processing, local transport, entertainment, team-building activities - all managed under one expert umbrella."
                 }
               ].map((item, index) => (
                 <motion.div
