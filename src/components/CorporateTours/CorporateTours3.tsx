@@ -19,7 +19,7 @@ const CorporateTours3 = () => {
         {
           title: "Venue Selection",
           icon: "🏨",
-          description: "Elite conference centers, tropical retreats, historical landmarks - tailored to the event&apos;s purpose and tone."
+          description: "Elite conference centers, tropical retreats, historical landmarks - tailored to the event's purpose and tone."
         },
         {
           title: "Logistics",
