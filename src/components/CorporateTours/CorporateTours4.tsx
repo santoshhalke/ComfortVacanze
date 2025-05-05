@@ -29,8 +29,8 @@ const CorporateTours4 = () => {
     
     
    <>
-    {/* Global Experiences */}
-    {/* <section className="py-16 bg-gray-50">
+        {/* Global Experiences */}
+        <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
@@ -42,11 +42,32 @@ const CorporateTours4 = () => {
               variants={fadeIn}
               className="text-3xl font-bold text-center mb-12 text-[#EB7C19]"
             >
-              Unique Global Experiences
+              ✨ Unique Global Experiences
             </motion.h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {experiences.map((exp, index) => (
+              {[
+                { 
+                  region: "Middle East", 
+                  activities: ["Desert adventures and luxury gala nights."]
+                },
+                { 
+                  region: "Europe", 
+                  activities: ["Vineyards, castles, historical walking tours, and culinary masterclasses."]
+                },
+                { 
+                  region: "Asia", 
+                  activities: ["Cultural immersions, temple visits, traditional performances, cooking tours."]
+                },
+                { 
+                  region: "Tropical Destinations", 
+                  activities: ["Private island incentives in Indonesia, Malaysia, and the Philippines."]
+                },
+                { 
+                  region: "Adventure Escapes", 
+                  activities: ["Safaris in Africa, skiing in Switzerland, rainforest explorations in Latin America."]
+                }
+              ].map((exp, index) => (
                 <motion.div
                   key={index}
                   variants={fadeIn}
@@ -70,7 +91,45 @@ const CorporateTours4 = () => {
             </div>
           </motion.div>
         </div>
-      </section> */}
+      </section>
+
+      {/* Why Partner Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+          >
+            <motion.h2 
+              variants={fadeIn}
+              className="text-3xl font-semibold text-center mb-12 text-[#EB7C19]"
+            >
+              🤝 Why Partner with Comfort Vacanze and SS World Holidays
+            </motion.h2>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+              {[
+                "Regional Expertise, Global Delivery",
+                "Bespoke Programs, No Templates",
+                "Efficient, Cost-Effective Execution",
+                "Creative Concepts Aligned with Your Vision",
+                "Trusted Professionalism from Planning to Execution"
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  variants={fadeIn}
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-gray-50 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <p className="text-lg font-semibold">{item}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-[#EB7C19] to-[#EB7C19] text-white">
@@ -83,29 +142,37 @@ const CorporateTours4 = () => {
           >
             <motion.h2 
               variants={fadeIn}
-              className="text-2xl md:text-3xl font-semibold mb-6"
+              className="text-3xl md:text-4xl font-bold mb-6"
             >
-              Corporate Travel Made Effortless
+              🏆 Corporate Travel Made Effortless with Comfort Vacanze & SS World Holidays
             </motion.h2>
             
             <motion.p 
               variants={fadeIn}
               className="text-xl mb-8 max-w-3xl mx-auto"
             >
-              From high energy incentive programs to elegant retreats, we deliver world class corporate travel experiences that inspire, engage, and elevate your brand.
+              From high-energy incentive programs and leadership summits to elegant retreats and client appreciation events, Comfort Vacanze and SS World Holidays deliver world-class corporate travel experiences that inspire, engage, and elevate your brand.
             </motion.p>
-            
-            
             
             <motion.p 
               variants={fadeIn}
               className="mt-8 italic text-blue-200"
             >
-              Your vision, our expertise  &ndash; together, we create journeys that spark success.
+              Your vision, our expertise &ndash; together, we create journeys that spark success.
             </motion.p>
+
+            <motion.button
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-12 bg-white text-[#EB7C19] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
+            >
+              👉 Contact Us Today to plan your next corporate adventure across the globe!
+            </motion.button>
           </motion.div>
         </div>
-      </section></>
+      </section>
+  </>
    
   );
 };

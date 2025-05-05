@@ -14,10 +14,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title:{
-    default:"Comfort Vacanze - Affordable International Tour Packages from Pune",
+    default:"Comfort Vacanze-Corporate Group Travel & International Event Management from Pune",
     template:"%s - Comfort Vacanze"
   },
-  description: "Book customized & budget international tour packages from Pune. Affordable foreign holidays under ₹50,000 with Comfort Vacanze - Trusted travel agency in India.",
+  description: "Seamless corporate group tours and international event planning services. Customized travel solutions from Pune to top Asian destinations.",
   keywords:["International tour packages from Pune",
     "Affordable foreign tour packages",
     "Customized foreign holiday packages",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         siteName: "Comfort Vacanze",
         images: [
           {
-            url: "/images/Home/hero2.jpg", // Place this image in your `public/` folder
+            url: "/images/Home/home1.jpg", // Place this image in your `public/` folder
             width: 1200,
             height: 630,
             alt: "Comfort Vacanze Banner",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Comfort Vacanze",
         description: "Premium holiday experiences tailored just for you.",
-        images: ["/images/Home/hero2.jpg"],
+        images: ["/images/Home/home1.jpg"],
       },
       metadataBase: new URL("https://comfortvacanze.com"),
 
