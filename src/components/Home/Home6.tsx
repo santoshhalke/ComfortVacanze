@@ -18,7 +18,7 @@ const OldWebsite = () => {
       </h2>
       
       <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-        We've upgraded to a new experience, but you can still access our old website 
+        We&apos;ve upgraded to a new experience, but you can still access our old website 
         if you need information from our previous version.
       </p>
       

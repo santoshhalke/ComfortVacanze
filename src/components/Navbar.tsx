@@ -37,22 +37,30 @@ const Navbar = () => {
   return (
     <nav className="bg-white fixed w-full top-0 z-50 font-poppins font-regular text-gray-800 px-4 py-2 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-17 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/images/logo.png"
-                width={128}
-                height={64}
-                alt="logo"
-                className="h-16 w-32"
-              />
-            </Link>
-          </div>
+          
+<div className="flex-shrink-0 flex items-center">
+  <Link href="/" className="flex flex-col">
+    <div className="flex items-center">
+      <Image
+        src="/images/logo.png"
+        width={128}
+        height={64}
+        alt="logo"
+        className="h-15 w-31"
+      />
+    </div>
+    <span className="absolute bottom-2 lg:bottom-1 left-23 lg:left-51 text-[9px] md:text-[12px] font-semibold text-gray-800 italic">
+      Vacanze The Comfi Way
+    </span>
+    
+  </Link>
+    
+</div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10 relative">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-10 relative">
             {navLinks.map((link) => (
               <div key={link.title} className="relative">
                 {link.dropdown ? (
