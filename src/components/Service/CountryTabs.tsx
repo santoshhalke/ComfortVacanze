@@ -5,8 +5,6 @@ export interface DayPackage {
   day: string;
   name: string;
   price: string;
-  includes: string[];
-  excludes: string[];
   highlights?: string[];
 }
 
@@ -25,7 +23,7 @@ interface CountryTabsProps {
 export const CountryTabs = ({ countries, activeCountry, onCountryChange }: CountryTabsProps) => {
   return (
     <div className="flex justify-center mb-8 md:mb-12 mt-6 md:mt-10 px-2 sm:px-4">
-      <div className="flex flex-wrap justify-center gap-2 md:gap-1 w-full max-w-4xl">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-1 w-full max-w-5xl">
         {countries.map((country) => (
           <motion.button
             key={country.id}

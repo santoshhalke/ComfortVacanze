@@ -2,11 +2,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+
 const Home2 = () => {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto lg:mx-[7vw] px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left Column - Text Content */}
           <motion.div
             initial="hidden"
@@ -17,7 +19,7 @@ const Home2 = () => {
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-6"
+            className="w-full lg:w-1/2 space-y-6"
           >
             <motion.h1
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
@@ -63,33 +65,26 @@ const Home2 = () => {
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#EB7C19] hover:bg-orange-700 transition-colors duration-200"
                 >
                   Discover Our Story
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="ml-2 h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  <FaArrowRight className="ml-2 h-5 w-5" />
                 </motion.div>
               </Link>
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Image */}
-          <div>
-  {(
-    <video width="100%" controls autoPlay muted preload="auto">
-      <source src="/videos/home2.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  )}
-</div>
-
+          {/* Right Column - Video */}
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}> {/* 16:9 Aspect Ratio */}
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/_wGuyuK1HSM?autoplay=1&mute=1&rel=0&si=gGw14WIkkRjUDYkr"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

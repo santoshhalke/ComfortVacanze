@@ -117,7 +117,7 @@ const Mice3 = () => {
 
       {/* Global Presence */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="mx-auto lg:mx-[6vw]  px-4 sm:px-6 lg:px-8">
     <motion.div
       initial="hidden"
       whileInView="visible"
@@ -155,11 +155,7 @@ const Mice3 = () => {
                 ))}
               </ul>
               
-              <div className="mt-4 pt-4 border-t border-white/20">
-                <span className="text-[#EB7C19]/60 text-sm font-medium">
-                  {destination.countries.length}+ locations
-                </span>
-              </div>
+             
             </div>
             
             {/* Background Pattern */}

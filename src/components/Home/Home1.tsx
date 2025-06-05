@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useDragControls } from 'framer-motion';
-import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const HeroCarousel = () => {
@@ -11,29 +10,28 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "/images/Home/home3.jpg",
+      image: "/images/Home/home3.webp",
       title: "Explore The Unknown",
-      subtitle: "Embark on a transformative journey and explore the allure of diverse cultures, landscapes, and people.",
+      subtitle: "Embark on a transformative journey and explore the allure of diverse cultures, landscapes and people.",
     },
     {
       id: 2,
-      image: "/images/Home/home1.jpg",
+      image: "/images/Home/home1.webp",
       title: "Moments That Matter",
       subtitle: "Create memories with personalized travel experiences designed just for you.",
     },
     {
       id: 3,
-      image: "/images/Home/home2.jpg",
+      image: "/images/Home/home2.webp",
       title: "Beyond Borders",
       subtitle: "Discover hidden gems and connect with cultures across the world.",
     },
     {
       id: 4,
-      image: "/images/Home/home4.jpg",
+      image: "/images/Home/home4.webp",
       title: "Sustainable Travel",
       subtitle: "Journey responsibly with our eco-tours",
     },
-   
   ];
 
   // Auto-rotate slides every 5 seconds
@@ -77,15 +75,12 @@ const HeroCarousel = () => {
           }}
           dragControls={controls}
         >
-          {/* Hero Image */}
-          <Image
+          {/* Hero Image as img tag with lazy loading */}
+          <img
             src={slides[currentIndex].image}
-            alt="hero section image"
-            fill
-            className="object-cover select-none"
-            priority
-            quality={100}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            alt={`Slide ${currentIndex + 1}`}
+            loading="lazy"
+            className="absolute top-0 left-0 w-full h-full object-cover object-center select-none"
           />
           
           {/* Text overlay */}

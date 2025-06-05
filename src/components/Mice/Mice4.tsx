@@ -16,16 +16,6 @@ const Mice4 = () => {
       };
     
 
-    
-  
-    
-  
-    
-
- 
-    
-   
-
   return (
     
   <div>
@@ -33,49 +23,11 @@ const Mice4 = () => {
  
 
       {/* Industries */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            <motion.h2 
-              variants={fadeIn}
-              className="text-3xl font-bold text-center mb-12 text-[#EB7C19]"
-            >
-              Industries We Serve
-            </motion.h2>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[
-                { name: "Healthcare", icon: "🏥" },
-                { name: "Technology", icon: "💻" },
-                { name: "Finance", icon: "💰" },
-                { name: "Manufacturing", icon: "🏭" },
-                { name: "Hospitality", icon: "🏨" },
-                { name: "Education", icon: "🎓" },
-                { name: "Retail", icon: "🛍️" },
-                { name: "Energy", icon: "⚡" }
-              ].map((industry, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeIn}
-                  className="bg-gray-50 rounded-lg p-6 text-center"
-                >
-                  <div className="text-3xl mb-3">{industry.icon}</div>
-                  <h3 className="font-semibold">{industry.name}</h3>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-[#EB7C19] to-[#d96e15] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-32 bg-gradient-to-r from-[#EB7C19] to-[#d96e15] text-white">
+        <div className="mx-auto lg:mx-[6vw]  px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="hidden"
             whileInView="visible"

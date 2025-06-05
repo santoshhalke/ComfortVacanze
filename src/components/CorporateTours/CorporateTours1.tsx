@@ -1,13 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const CorporateTours1 = () => {
-    const fadeIn = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-      };
+
     
       const staggerContainer = {
         visible: {
@@ -23,44 +19,30 @@ const CorporateTours1 = () => {
     
     <>
   {/* Hero Section */}
-       <section className="relative text-white py-20 md:py-32 overflow-hidden">
-         <motion.div className="absolute inset-0">
-           <Image 
-             src="/images/CorporateTours/corporate-tours.jpg" 
-             alt="Corporate group tours background"
-             fill
-             className="object-cover"
-           />
-         </motion.div>
-         
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative mt-5 lg:mt-0">
-           <motion.div
-             initial="hidden"
-             animate="visible"
-             variants={staggerContainer}
-             className="text-center"
-           >
-             <motion.h1 
-               variants={fadeIn}
-               className="text-4xl md:text-6xl font-bold mb-3"
-             >
-               Comfort Vacanze
-             </motion.h1>
-             <motion.p 
-               variants={fadeIn}
-               className="text-xl md:text-2xl mb-8 font-semibold"
-             >
-               Corporate Group Tours & Global Events
-             </motion.p>
-             <motion.p 
-               variants={fadeIn}
-               className="text-xl md:text-xl font-medium italic mt-3"
-             >
-               Where Success Meets Seamless Travel
-             </motion.p>
-           </motion.div>
-         </div>
-       </section>
+     <section className="relative text-white py-20 md:py-32 overflow-hidden">
+  {/* Background image using img tag */}
+  <img
+    src="/images/CorporateTours/corporate-tours.webp"
+    alt="Corporate Tours"
+    loading="lazy"
+    className="absolute inset-0 w-full h-full object-cover object-center -z-10"
+  />
+
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative mt-5 lg:mt-0">
+    <div className="text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-3">
+        Comfort Vacanze
+      </h1>
+      <p className="text-xl md:text-2xl mb-8 font-semibold">
+        Corporate Group Tours & Global Events
+      </p>
+      <p className="text-xl md:text-xl font-medium italic mt-3">
+        Where Success Meets Seamless Travel
+      </p>
+    </div>
+  </div>
+</section>
+
  
        {/* Intro Section */}
        <section className="py-16 bg-gray-50">

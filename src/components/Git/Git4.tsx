@@ -72,7 +72,7 @@ const Git4 = () => {
  
        {/* CTA */}
        <section className="py-16 bg-[#EB7C19] text-white">
-         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+         <div className="mx-auto lg:mx-[6vw]  px-4 sm:px-6 lg:px-8 text-center">
            <motion.div
              initial="hidden"
              whileInView="visible"
@@ -83,7 +83,8 @@ const Git4 = () => {
                variants={fadeIn}
                className="text-3xl md:text-4xl font-bold mb-6"
              >
-               Ready to Plan Your Group Adventure?
+               Comfort Vacanze-Your Trusted Partner for Group Travel
+
              </motion.h2>
              
              <motion.p 

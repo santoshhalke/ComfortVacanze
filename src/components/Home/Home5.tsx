@@ -30,24 +30,30 @@ const TestimonialsPage = () => {
 
   return (
     <div className="py-12 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-3xl font-bold text-center mb-16 relative z-10"
-        >
-          Customer Feedback
-          <motion.span
-            className="absolute left-1/2 -bottom-2 h-1 bg-[#EB7C19]"
-            initial={{ width: 0 }}
-            whileInView={{ width: "290px", x: "-50%" }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          />
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className=" mx-auto lg:mx-[6vw] px-4 sm:px-6 lg:px-8">
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="flex flex-col items-center mb-16 z-10" // Center content with flex
+>
+  <h2 className="text-2xl md:text-3xl font-bold text-center">
+    Feedback
+  </h2>
+  <motion.div
+    className="h-1 bg-[#EB7C19] mt-2" // No absolute positioning needed
+    initial={{ scaleX: 0 }} // Animate scale instead of width
+    whileInView={{ scaleX: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8, delay: 0.3 }}
+    style={{ 
+      width: "200px", // Fixed width
+      originX: 0.5 // Makes the animation grow from center
+    }}
+  />
+</motion.div>
+        <div className="flex flex-wrap md:justify-center gap-6">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}

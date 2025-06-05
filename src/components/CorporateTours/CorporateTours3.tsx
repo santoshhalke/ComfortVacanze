@@ -17,28 +17,28 @@ const CorporateTours3 = () => {
     
       const services = [
         {
-          title: "Venue Selection",
+          title: "Venue Selection and Setup",
           icon: "🏨",
           description: "Elite conference centers, tropical retreats, historical landmarks - tailored to the event's purpose and tone."
         },
         {
-          title: "Logistics",
+          title: "Logistics and Transportation",
           icon: "🚐",
           description: "Complete travel arrangements, visa facilitation, VIP handling, airport transfers, and local ground transport."
         },
         {
-          title: "Cultural Events",
+          title: "Cultural and Experiential Events",
           icon: "🎉",
           description: "Themed gala dinners, vineyard retreats, Arabian nights, cultural deep dives - crafted with local authenticity."
         },
         {
-          title: "Team Building",
+          title: "Team-Building Activities",
           icon: "👥",
           description: "Engage teams through yacht races, desert safaris, mountain treks, culinary battles, and more — all designed to foster leadership and collaboration."
 
         },
         {
-          title: "Global Compliance",
+          title: "International Compliance",
           icon: "🌎",
           description: "Visa support, insurance coordination, safety measures, and multilingual services - ensuring stress-free travel for global teams."
         }
@@ -50,7 +50,7 @@ const CorporateTours3 = () => {
     
     
     <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto lg:mx-[6vw]  px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -73,7 +73,7 @@ const CorporateTours3 = () => {
                   className="bg-gray-50 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
                 </motion.div>
               ))}

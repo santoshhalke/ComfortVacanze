@@ -1,18 +1,52 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, MapPin, Mail, Phone } from "lucide-react";
+import { Send, MapPin, Mail, Phone, Check } from "lucide-react";
 import { useForm, ValidationError } from '@formspree/react';
-
+import { useState, useEffect,FormEvent } from "react";
+import { useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("xyzwekee"); 
+  const [state, handleSubmit] = useForm("xyzwekee");
+  const [showThankYou, setShowThankYou] = useState(false);
+   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+if (!recaptchaSiteKey) {
+  throw new Error('NEXT_PUBLIC_RECAPTCHA_SITE_KEY is not defined');
+}
+  const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+     if (!isCaptchaVerified) {
+      alert("Please verify you're not a robot");
+      return;
+    }
+    await handleSubmit(e);
+
+    recaptchaRef.current?.reset();
+    setIsCaptchaVerified(false);
+  };
+  
+  const onRecaptchaChange = (token: string | null) => {
+    setIsCaptchaVerified(!!token);
+  };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowThankYou(true);
+    }
+  }, [state.succeeded]);
+
+  const handleSendAnother = () => {
+    setShowThankYou(false);
+  };
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className="grid grid-cols-1 lg:grid-cols-2 gap-8  py-20 lg:my-7 lg:ml-20"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-20 lg:my-7 lg:ml-20"
     >
       <div className="space-y-6 mt-16 ml-10 mr-10">
         <motion.h1
@@ -69,72 +103,59 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {state.succeeded ? (
-       <motion.div
-       initial={{ opacity: 0, scale: 0.8 }}
-       animate={{ opacity: 1, scale: 1 }}
-       transition={{ duration: 0.5 }}
-       className="bg-white p-8 rounded-lg shadow-lg   mt-10 text-center mx-8 lg:mx-auto"
-     >
-       <motion.div
-         initial={{ scale: 0 }}
-         animate={{ scale: 1 }}
-         transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
-         className="mb-6"
-       >
-         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-           <svg
-             xmlns="http://www.w3.org/2000/svg"
-             className="h-12 w-12 text-green-500"
-             fill="none"
-             viewBox="0 0 24 24"
-             stroke="currentColor"
-             strokeWidth={2}
-           >
-             <path
-               strokeLinecap="round"
-               strokeLinejoin="round"
-               d="M5 13l4 4L19 7"
-             />
-           </svg>
-         </div>
-       </motion.div>
-       
-       <motion.h2
-         initial={{ y: 20, opacity: 0 }}
-         animate={{ y: 0, opacity: 1 }}
-         transition={{ delay: 0.4 }}
-         className="text-3xl font-bold text-gray-800 mb-3"
-       >
-         Thank You!
-       </motion.h2>
-       
-       <motion.p
-         initial={{ y: 20, opacity: 0 }}
-         animate={{ y: 0, opacity: 1 }}
-         transition={{ delay: 0.5 }}
-         className="text-gray-600 mb-6 text-lg"
-       >
-         Your message has been sent successfully. We&apos;ll get back to you soon.
-       </motion.p>
-       
-       <motion.div
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 1 }}
-         transition={{ delay: 0.8 }}
-         className="flex justify-center"
-       >
-         <button
-           onClick={() => window.location.reload()} // Optional: Add a button to send another message
-           className="px-6 py-2 bg-[#EB7C19] text-white rounded-md hover:bg-orange-600 transition-colors"
-         >
-           Send Another Message
-         </button>
-       </motion.div>
-     </motion.div>
+      {showThankYou ? (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white p-8 rounded-lg shadow-lg mt-10 text-center mx-8 lg:mx-auto"
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
+            className="mb-6"
+          >
+            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+              <Check className="h-12 w-12 text-green-500" strokeWidth={2} />
+            </div>
+          </motion.div>
+          
+          <motion.h2
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-3xl font-bold text-gray-800 mb-3"
+          >
+            Thank You!
+          </motion.h2>
+          
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="text-gray-600 mb-6 text-lg"
+          >
+            Your message has been sent successfully. We&apos;ll get back to you soon.
+          </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="flex justify-center"
+          >
+            <button
+              onClick={handleSendAnother}
+              className="px-6 py-2 bg-[#EB7C19] text-white rounded-md hover:bg-orange-600 transition-colors"
+            >
+              Send Another Message
+            </button>
+          </motion.div>
+        </motion.div>
       ) : (
         <motion.form
-          onSubmit={handleSubmit}
+          onSubmit={handleFormSubmit}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -205,12 +226,22 @@ const ContactForm = () => {
               className="text-red-500 text-sm"
             />
 
-            <motion.button
+             <div className="w-full lg:w-3/4">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={recaptchaSiteKey}    
+                onChange={onRecaptchaChange}
+              />
+            </div>
+
+           <motion.button
               type="submit"
-              disabled={state.submitting}
+              disabled={state.submitting || !isCaptchaVerified}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full lg:w-3/4 bg-[#EB7C19] hover:bg-orange-700 text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2"
+              className={`w-full lg:w-3/4 bg-[#EB7C19] hover:bg-orange-700 text-white font-medium py-3 px-4 transition-colors flex items-center justify-center space-x-2 ${
+                !isCaptchaVerified ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               <Send className="h-5 w-5" />
               <span>{state.submitting ? 'Sending...' : 'Send Message'}</span>

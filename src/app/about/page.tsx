@@ -3,9 +3,23 @@ import About2 from "@/components/About/About2";
 import About4 from "@/components/About/About4";
 import { Metadata } from "next";
 
-export const metadata: Metadata={
-  title:"About"
-}
+// about/page.tsx
+export const metadata: Metadata = {
+  title: "About-Our Story | Comfort Vacanze - Luxury Travel Pioneers Since 2018",
+  description: "Discover Comfort Vacanze's journey from Pune startup to international luxury travel leader. Learn about our values, milestones, and commitment to excellence.",
+  keywords: [
+    "Comfort Vacanze history",
+    "luxury travel company story",
+    "Pune travel agency",
+    "corporate travel specialists",
+    "travel company milestones",
+    "SS World Holidays partnership",
+    "award-winning travel agency"
+  ],
+  alternates: {
+    canonical: "/about"
+  }
+};
 const AboutPage = () => {
 
 

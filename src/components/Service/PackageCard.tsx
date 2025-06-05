@@ -1,15 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 interface DayPackage {
   day: string;
   name: string;
   price: string;
-  includes: string[];
-  excludes: string[];
   highlights?: string[];
-  image: string; // Add image URL to your package data
+  image: string;
 }
 
 interface PackageCardProps {
@@ -19,25 +16,23 @@ interface PackageCardProps {
 export const PackageCard = ({ pkg }: PackageCardProps) => {
   return (
     <motion.div
-      whileHover={{ y: -5 }}
-      className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200"
+      className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 w-[70vw] md:w-[40vw] lg:w-[24vw] md:mx-3 mt-5"
     >
-      {/* Image at the top */}
-      <div className="h-48 bg-gray-200 relative overflow-hidden">
-  {pkg.image ? (
-    <Image
-      src={pkg.image}
-      alt={pkg.name}
-      fill
-      className="object-cover"
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-    />
-  ) : (
-    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-400 to-purple-500">
-      <span className="text-white text-xl font-bold">{pkg.name}</span>
-    </div>
-  )}
-</div>
+      {/* Image at the top using <img> with lazy loading */}
+      <div className="h-66 md:h-48 bg-gray-200 relative overflow-hidden">
+        {pkg.image ? (
+          <img
+            src={pkg.image}
+            alt={pkg.name}
+            loading="lazy"
+            className="object-cover object-center"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-400 to-purple-500">
+            <span className="text-white text-xl font-bold">{pkg.name}</span>
+          </div>
+        )}
+      </div>
 
       {/* Package details */}
       <div className="p-6">
@@ -48,25 +43,7 @@ export const PackageCard = ({ pkg }: PackageCardProps) => {
           </div>
         </div>
 
-        {/* Highlights (if any) */}
-        {pkg.highlights && (
-          <div className="mb-4">
-            <div className="flex flex-wrap gap-2">
-              {pkg.highlights.map((hl, i) => (
-                <span 
-                  key={i} 
-                  className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-orange-100 text-[#EB7C19]"
-                >
-                  {hl}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-
-
-
-
+       
       </div>
     </motion.div>
   );

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +10,15 @@ const Navbar = () => {
   const navLinks = [
     { title: "Home", href: "/" },
     { 
-      title: "About Us", 
-      href: "#",
-      dropdown: [
-        { title: "About", href: "/about" },
+      title: "About", 
+      href: "/about"
+    },
+    { title: "Contact", href: "/contact" },
+    { title: "Blog", href: "/blog" },
+
+    { title: "Services", href: "#" ,
+        dropdown: [
+        { title: "Packages", href: "/package" },
         { title: "Corporate Tours", href: "/corporate-tours" },
         { title: "GIT", href: "/git" },
         { title: "Educational Tours", href: "/educational-tour" },
@@ -22,9 +26,7 @@ const Navbar = () => {
 
       ]
     },
-    { title: "Contact", href: "/contact" },
-    { title: "Blog", href: "/blog" },
-    { title: "Service", href: "/service" },
+
     { title: "Gallery", href: "/gallery" },
 
     
@@ -42,32 +44,26 @@ const Navbar = () => {
           
 <div className="flex-shrink-0 flex items-center">
   <Link href="/" className="flex flex-col">
-    <div className="flex items-center">
-      <Image
-        src="/images/logo.png"
-        width={128}
-        height={64}
-        alt="logo"
-        className="h-15 w-31"
-      />
-    </div>
+    <div
+      className="h-14 w-32 bg-no-repeat bg-contain bg-center"
+      style={{ backgroundImage: `url('/images/logo.webp')` }}
+    />
     <span className="absolute bottom-2 lg:bottom-1 left-23 lg:left-51 text-[9px] md:text-[12px] font-semibold text-gray-800 italic">
       Vacanze The Comfi Way
     </span>
-    
   </Link>
-    
 </div>
 
+
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-3 lg:space-x-10 relative">
+          <div className="hidden md:flex items-center space-x-1 lg:space-x-10 relative">
             {navLinks.map((link) => (
               <div key={link.title} className="relative">
                 {link.dropdown ? (
                   <div className="relative group">
                     <button
                       onClick={toggleAboutDropdown}
-                      className="flex items-center text-gray-600 px-3 py-2 text-sm font-medium transition-all hover:border-b-4 hover:border-[#EB7C19]"
+                      className="flex items-center text-gray-600 px-2 py-1 lg:px-3 lg:py-2 text-[10px] lg:text-sm font-medium transition-all hover:border-b-4 hover:border-[#EB7C19]"
                     >
                       {link.title}
                       {isAboutDropdownOpen ? (
@@ -116,6 +112,7 @@ const Navbar = () => {
               )}
             </button>
           </div>
+          
         </div>
       </div>
 

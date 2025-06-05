@@ -38,7 +38,7 @@ const About3 = () => {
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto lg:mx-[4vw]">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -62,13 +62,13 @@ const About3 = () => {
                 />
               </motion.h2>
   
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="mx-4 lg:mx-auto flex flex-wrap lg:justify-center gap-8">
                 {corevalues.map((value, index) => (
                   <motion.div
                     key={value.title}
                     variants={itemVariants}
                     custom={index}
-                    className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
+                    className="bg-white p-8 w-full lg:w-[25vw] rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
                   >
                     <div className="text-4xl mb-4">{value.icon}</div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">

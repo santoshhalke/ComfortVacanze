@@ -58,7 +58,7 @@ const EducationalTours2 = () => {
     
     <>
      <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto lg:mx-[6vw]  px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
           whileInView="visible"

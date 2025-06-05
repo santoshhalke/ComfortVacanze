@@ -1,6 +1,5 @@
 "use client";
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { containerVariants,itemVariants,fadeInVariants } from './AboutAnimation';
 import { useEffect,useState } from 'react';
 const About2 = () => {
@@ -16,7 +15,7 @@ const About2 = () => {
   }, []);
 
   return (
-     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8  mx-auto lg:mx-[6vw]">
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -75,7 +74,7 @@ const About2 = () => {
                         2018 &ndash; The Comfort Vacanze Journey Begins
                       </h3>
                       <p className="text-gray-600 text-justify">
-                        Founded as Comfort Vacanze Tours, we started with premium
+                        Founded as Comfort Vacanze, we started with premium
                         vehicle services built on reliability and comfort Vacanze,
                         growing to become one of India&apos;s most trusted names in
                         luxury transport across PAN India.
@@ -98,8 +97,8 @@ const About2 = () => {
                       </h3>
                       <p className="text-gray-600 text-justify">
                         Headquartered in Pune, India, we evolved into Comfort
-                        Vacanze &ndash; the parent company of Comfort Tours PVT.
-                        LTD. With global partnerships and a refined vision, we began
+                        Vacanze &ndash; the parent company of Comfort Tours Pvt.
+                        Ltd. With global partnerships and a refined vision, we began
                         crafting extraordinary journeys blending seamless service
                         with soulful travel experiences.
                       </p>
@@ -136,35 +135,36 @@ const About2 = () => {
   className="lg:col-span-2 relative h-80 md:h-[500px]"
 >
   {/* Main Image */}
-  <motion.div
-    initial={{ opacity: 0, scale: 0.9 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
-    className="absolute inset-0 overflow-hidden z-10 border-white"
-  >
-    <Image
-      src="/images/About/travel-pune.jpg"
-      alt="Comfort Vacanze headquarters"
-      fill
-      className="object-cover"
-    />
-    
-    {/* Travel Text Overlay */}
-    <div className="text-center z-20">
-          {text.split('').map((letter, index) => (
-            <motion.span
-              key={index}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: index < visibleLetters ? 1 : 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-4xl md:text-5xl font-bold text-[#EB7C19]  drop-shadow-lg ml-3"
-            >
-              {letter}
-            </motion.span>
-          ))}
-        </div>
-  </motion.div>
+<motion.div
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="absolute inset-0 overflow-hidden z-10 border-white"
+>
+  {/* Replaced background div with optimized img tag */}
+  <img
+    src="/images/About/travelpune.webp" // Converted to WebP format
+    alt="Travel Pune scenic view"
+    loading="lazy"
+    className="absolute inset-0 w-full h-full object-cover object-center"
+  />
+  
+  {/* Travel Text Overlay - unchanged */}
+  <div className="text-center z-20">
+    {text.split('').map((letter, index) => (
+      <motion.span
+        key={index}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: index < visibleLetters ? 1 : 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-4xl md:text-5xl font-bold text-[#EB7C19] drop-shadow-lg ml-3"
+      >
+        {letter}
+      </motion.span>
+    ))}
+  </div>
+</motion.div>
 </motion.div>
               </div>
     

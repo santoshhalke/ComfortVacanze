@@ -1,236 +1,246 @@
- export const countriesData = [
+ export const countriesData =
+[
     {
-      id: "th",
-      name: "Bali",
+      id: "1",
+      name: "Singapore",
       packages: [
         {
-          image: "/images/Services/bali/bali1.jpg",
-          day: "4 Days 3 Nights",
-          name: "1st Package",
+          image: "/images/Services/singapore/singapore1.webp",
+          day: "3 Nights 4 Days",
+          name: "Singapore Delight",
+          price: "$568",
+          highlights: ["Marina Bay Sands"],
+
+        },
+
+        {
+          image: "/images/Services/singapore/singapore2.webp",
+          day: "4 Nights 5 Days",
+          name: "Unbelievable Singapore",
+          price: "$704",
+          highlights: ["Gardens by the Bay"],
+        }
+       
+
+      ],
+    },
+
+    {
+      id: "2",
+      name: "Malaysia",
+      packages: [
+        {
+          image: "/images/Services/malaysia/malaysia1.webp",
+          day: "3 Nights 4 Days",
+          name: "Malaysia Delight",
+          price: "$568",
+          highlights: ["Twin Tower"],
+
+        },
+
+        {
+          image: "/images/Services/malaysia/malaysia2.webp",
+          day: "4 Nights 5 Days",
+          name: "Unbelievable Malaysia",
+          price: "$704",
+          highlights: ["Penang"],
+        },
+       
+
+      ],
+    },
+
+    {
+      id: "3",
+      name: "Thailand",
+      packages: [
+        {
+          image: "/images/Services/thiland/krabi1.webp",
+          day: "3 Nights 4 Days",
+          name: "Simply Krabi",
+          price: "$129",
+          highlights: [ "Islands tour"],
+
+        },
+        {
+          image: "/images/Services/thiland/krabi2.webp",
+          day: "2 Nights 3 Days",
+          name: "Ultimate Phuket",
+          price: "$799",
+          highlights: ["Cultural blend", "Traditional & modern"],
+        },
+      ],
+    },
+
+    {
+      id: "4",
+      name: "Indonesia",
+      packages: [
+        {
+          image: "/images/Services/bali/bali1.webp",
+          day: "3 Nights 4 Days",
+          name: "Bali Delight",
           price: "$199",
-          includes: [
-            "Airport transfers",
-            "Grand Palace tour",
-            "Wat Pho visit",
-            "Local lunch",
-          ],
-          excludes: ["Hotel accommodation", "Evening activities"],
           highlights: ["Kintamani Volcano", "Tanah Lot Sunset"],
         },
         {
-          image: "/images/Services/bali/bali2.jpg",
-          day: "5 Days 4 Nights",
-          name: "2nd Package",
+          image: "/images/Services/bali/bali2.webp",
+          day: "4 Nights 5 Days",
+          name: "Ultimate Bali",
           price: "$266",
-          includes: [
-            "2 nights hotel (3-star)",
-            "All transfers",
-            "Chiang Rai temples",
-            "Golden Triangle tour",
-            "Meals as per itinerary",
-          ],
-          excludes: ["International flights", "Personal expenses"],
           highlights: ["Ubud Swing Tour "],
         },
         {
-          image: "/images/Services/bali/package3.jpg",
-          day: "6 Days 5 Nights",
-          name: "3rd Package",
+          image: "/images/Services/bali/package3.webp",
+          day: "5 Nights 6 Days",
+          name: "Best of Bali",
           price: "$334",
-          includes: [
-            "6 nights accommodation",
-            "Phuket & Krabi tours",
-            "Phi Phi Islands cruise",
-            "All domestic transfers",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Scuba diving fees"],
+         
           highlights: ["Tegenungan Waterfall"],
         }, 
         {
-          image: "/images/Services/bali/bali4.jpg",
-          day: "7 Days 6 Nights",
-          name: "4th Package",
+          image: "/images/Services/bali/bali4.webp",
+          day: "6 Nights 7 Days",
+          name: "Romantic Bali",
           price: "$399",
-          includes: [
-            "2 nights hotel (3-star)",
-            "All transfers",
-            "Chiang Rai temples",
-            "Golden Triangle tour",
-            "Meals as per itinerary",
-          ],
-          excludes: ["International flights", "Personal expenses"],
           highlights: ["Uluwatu kecak fire dance"],
         },
       ],
     },
+
     {
-      id: "jp",
+      id: "5",
       name: "Vietnam",
       packages: [
         {
-          image: "/images/Services/vietnam/vietnam1.jpg",
-          day: "4 Days 3 Nights",
-          name: "1st Package",
+          image: "/images/Services/vietnam/vietnam1.webp",
+          day: "3 Nights 4 Days",
+          name: "Best of Vietnam",
           price: "$568",
-          includes: [
-            "Shibuya Crossing tour",
-            "Meiji Shrine visit",
-            "Harajuku experience",
-            "Local guide",
-          ],
-          excludes: ["Hotel accommodation", "Evening activities"],
           highlights: ["Ha noi city tour "],
 
         },
 
         {
-          image: "/images/Services/vietnam/vietnam2.jpg",
-          day: "5 Days 4 Nights",
-          name: "2nd Package",
+          image: "/images/Services/vietnam/vietnam2.webp",
+          day: "4 Nights 5 Days",
+          name: "Ultimate Vietnam",
           price: "$704",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
           highlights: ["Ho chi minh","Mekong delta","Cu chi tunnels "],
         },
         {
-          image: "/images/Services/vietnam/vietnam3.jpg",
-          day: "5 Days 4 Nights",
-          name: "3rd  Package",
+          image: "/images/Services/vietnam/vietnam3.webp",
+          day: "4 Nights 5 Days",
+          name: "Adventure Vietnam",
           price: "$678",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
           highlights: ["Ho chi minh","Da nang"],
         },
 
       ],
     },
+    
     {
-      id: "thi",
-      name: "Thiland",
-      packages: [
-        {
-          image: "/images/Services/thiland/krabi1.jpg",
-          day: "4 Days 3 Nights",
-          name: "1st Package-Krabi Tour",
-          price: "$129",
-          includes: [
-            "Shibuya Crossing tour",
-            "Meiji Shrine visit",
-            "Harajuku experience",
-            "Local guide",
-          ],
-          excludes: ["Hotel accommodation", "Evening activities"],
-          highlights: [ "Islands tour"],
-
-        },
-        {
-          image: "/images/Services/thiland/krabi2.jpg",
-          day: "3 Days 2 Nights",
-          name: "2nd Package-Phuket Tour",
-          price: "$799",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
-          highlights: ["Cultural blend", "Traditional & modern"],
-        },
-      ],
-    },
-    {
-      id: "sl",
+      id: "6",
       name: "Sri Lanka",
       packages: [
         {
-          image: "/images/Services/srilanka/srilanka1.jpg",
-          day: "3 Nights 4 Days",
-          name: "1st Package",
+          image: "/images/Services/srilanka/srilanka1.webp",
+          day: "4 Days 3 Nights",
+          name: "Sri Lanka Delight",
           price: "$800",
-          includes: [
-            "Shibuya Crossing tour",
-            "Meiji Shrine visit",
-            "Harajuku experience",
-            "Local guide",
-          ],
-          excludes: ["Hotel accommodation", "Evening activities"],
           highlights: ["Culture", "Beach", "City"],
         },
         {
-          image: "/images/Services/srilanka/srilanka2.jpg",
-          day: "5 Days 4 nights",
-          name: "2nd Package",
+          image: "/images/Services/srilanka/srilanka2.webp",
+          day: "4 Nights 5 Days",
+          name: "Ultimate Sri Lanka",
           price: "$1202",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
+          
           highlights: ["Heritage", "Tea Gardens"],
         },
         {
-          image: "/images/Services/srilanka/srilanka3.jpg",
-          day: "6 Days 5 nights",
-          name: "3rd Package",
+          image: "/images/Services/srilanka/srilanka3.webp",
+          day: "5 Nights 6 Days",
+          name: "Romantic Srilanka",
           price: "$1477",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
+          
           highlights: ["Glimpse of Sri Lanka"],
         },
         {
-          image: "/images/Services/srilanka/srilanka4.jpg",
-          day: "8 Days 7 nights",
-          name: "4th Package",
+          image: "/images/Services/srilanka/srilanka4.webp",
+          day: "7 Nights 8 Days",
+          name: "Unbelievable Sri Lanka",
           price: "$1843",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
+          
           highlights: ["Across Island Tour"],
         },
         {
-          image: "/images/Services/srilanka/srilanka5.jpg",
-          day: "8 Days 7 nights",
-          name: "5th Package",
+          image: "/images/Services/srilanka/srilanka5.webp",
+          day: "7 Nights 8 Days",
+          name: "Adventure Sri Lanka",
           price: "$1769",
-          includes: [
-            "4 nights accommodation",
-            "Tokyo & Kyoto tours",
-            "Bullet train transfer",
-            "Fushimi Inari visit",
-            "Daily breakfast",
-          ],
-          excludes: ["International flights", "Optional activities"],
+      
           highlights: ["Ramayana Tour"],
         }
       ],
     },
-  ];
+
+    {
+      id: "7",
+      name: "Dubai",
+      packages: [
+        {
+          image: "/images/Services/dubai/dubai1.webp",
+          day: "3 Nights 4 Days",
+          name: "Dubai Delight",
+          price: "$800",
+          highlights: ["Burj Khalifa","Burj Al Arab","Global Village"]
+        },
+        {
+          image: "/images/Services/dubai/dubai2.webp",
+          day: "4 Nights 5 Days",
+          name: "Best of Dubai",
+          price: "$1202",
+          
+          highlights: ["Miracle Garden","Dolphinarium"],
+        },
+        {
+          image: "/images/Services/dubai/dubai3.webp",
+          day: "5 Nights 6 Days",
+          name: "Ultimate Dubai",
+          price: "$1477",
+          
+          highlights: ["Dubai Fountain"],
+        }
+      ],
+    },
+
+    {
+      id: "8",
+      name: "Europe",
+      packages: [
+        {
+          image: "/images/Services/europe/europe1.webp",
+          day: "3 Nights 4 Days",
+          name: "Ultimate Europe",
+          price: "$129",
+          highlights: [ "Sagrada Familia","Florence"],
+
+        },
+        {
+          image: "/images/Services/europe/europe2.webp",
+          day: "2 Nights 3 Days",
+          name: "Best Of Europe",
+          price: "$799",
+          highlights: ["Colosseum"],
+        },
+        {
+          image: "/images/Services/europe/europe3.webp",
+          day: "3 Nights 4 Days",
+          name: "Unbelievable Europe",
+          price: "$799",
+          highlights: ["Colosseum"],
+        },
+      ],
+    },
+];

@@ -55,7 +55,7 @@ const TravelTipsAccordion = () => {
                           viewport={{ once: true }}
                           transition={{ duration: 0.8, delay: 0.3 }}
                         />
-                      </motion.h2>
+        </motion.h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
         {travelTips.map((tip) => (
           <motion.div
