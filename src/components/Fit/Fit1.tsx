@@ -1,6 +1,6 @@
 
 
-const Git1 = () => {
+const Fit1 = () => {
   return (
     
     <>
@@ -28,12 +28,12 @@ const Git1 = () => {
              <p 
                className="text-xl md:text-2xl mb-8 font semibold"
              >
-               Group Inclusive Tours (GIT)
+                Free Independent Traveller (FIT)
              </p>
              <p 
                className="text-xl md:text-xl font-medium italic mt-3"
              >
-               Connecting People Through Seamless Travel Experiences
+                Travel on Your Terms. Explore Without Limits.
              </p>
            </div>
          </div>
@@ -45,10 +45,11 @@ const Git1 = () => {
            <div
              
            >
-             <h2 className="text-3xl font-bold text-[#EB7C19] mb-6">Journey Together, Experience More</h2>
+             <h2 className="text-3xl font-bold text-[#EB7C19] mb-6">Your Trip, Your Way</h2>
              <p className="text-lg md:text-xl leading-relaxed">
-               At Comfort Vacanze, we believe travel is more than movement . it&apos;s about connection, discovery, and unforgettable memories. Our Group Inclusive Tours are designed to deliver smooth, enriching journeys for leisure groups, corporate teams, educational institutions, and special interest travelers.
+               Are you the kind of traveler who doesn’t follow the crowd? Someone who prefers authentic experiences, flexible schedules, and custom journeys over cookie-cutter tours?
              </p>
+             
            </div>
          </div>
        </section>
@@ -65,4 +66,4 @@ const Git1 = () => {
   );
 };
 
-export default Git1;
+export default Fit1;

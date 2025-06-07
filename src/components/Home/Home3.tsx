@@ -45,25 +45,25 @@ const DestinationsSection: React.FC = () => {
     {
       id: 5,
       name: "Vietnam",
-      image: "/images/Home/vietnam.webp",
+      image: "/images/Home/UpdatedVietnam.jpg",
       placeholder: "/images/Home/vietnam-placeholder.webp",
     },
     {
       id: 6,
       name: "Srilanka",
-      image: "/images/Home/srilanka.webp",
+      image: "/images/Home/UpdatedSrilanka.jpg",
       placeholder: "/images/Home/vietnam-placeholder.webp",
     },
     {
       id: 7,
       name: "Dubai",
-      image: "/images/Home/dubai.webp",
+      image: "/images/Home/UpdatedDubai.jpg",
       placeholder: "/images/Home/vietnam-placeholder.webp",
     },
     {
       id: 8,
       name: "London",
-      image: "/images/Home/london.webp",
+      image: "/images/Home/UpdatedLondon.jpg",
       placeholder: "/images/Home/vietnam-placeholder.webp",
     },
     {
