@@ -19,11 +19,11 @@ const Navbar = () => {
     { title: "Services", href: "#" ,
         dropdown: [
         { title: "Packages", href: "/package" },
-        { title: "Corporate Tours", href: "/corporate-tours" },
+        { title: "FIT", href: "/fit" },
         { title: "GIT", href: "/git" },
         { title: "Educational Tours", href: "/educational-tour" },
         { title: "MICE", href: "/mice" },
-
+        { title: "Corporate Tours", href: "/corporate-tours" }
       ]
     },
 

@@ -72,7 +72,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-white mb-4">Our Network</h3>
             <ul className="space-y-2">
-              <li><span className="text-[#EB7C19]">Comfort Tours Pvt. Ltd.</span> - Luxury Transport</li>
+              <li><span className="text-[#EB7C19]">Comfort Tours Pvt. Ltd.</span> - Your Complete Transport Solutions</li>
               <li><span className="text-[#EB7C19]">SS World Holidays</span> - Malaysia Partnership</li>
               <li><Link href="/privacy-policy" className="hover:text-[#EB7C19] transition-colors">Privacy Policy</Link></li>
               <li><Link href="/termsandconditions" className="hover:text-[#EB7C19] transition-colors">Terms & Conditions</Link></li>

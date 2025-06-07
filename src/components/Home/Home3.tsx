@@ -20,27 +20,28 @@ const DestinationsSection: React.FC = () => {
    {
       id: 1,
       name: "Singapore",
-      image: "/images/Home/singapore.webp",
+      image: "/images/Home/UpdatedSINGAPORE.jpg",
       placeholder: "/images/Home/singapore-placeholder.webp",
     },
     {
       id: 2,
       name: "Malaysia",
-      image: "/images/Home/malaysia.webp",
+      image: "/images/Home/UpdatedMalaysia.jpg",
       placeholder: "/images/Home/malaysia-placeholder.webp",
     },
     {
       id: 3,
       name: "Thailand",
-      image: "/images/Home/thailand.webp",
+      image: "/images/Home/updatedThailand.jpg",
       placeholder: "/images/Home/thailand-placeholder.webp",
     },
     {
       id: 4,
       name: "Indonesia",
-      image: "/images/Home/indonesia.webp",
+      image: "/images/Home/UpdatedIndonesia.jpg",
       placeholder: "/images/Home/indonesia-placeholder.webp",
     },
+    // need to change photos from here 
     {
       id: 5,
       name: "Vietnam",
