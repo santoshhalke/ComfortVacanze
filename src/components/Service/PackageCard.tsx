@@ -1,5 +1,5 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
 interface DayPackage {
   day: string;
@@ -15,17 +15,14 @@ interface PackageCardProps {
 
 export const PackageCard = ({ pkg }: PackageCardProps) => {
   return (
-    <motion.div
-      className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 w-[70vw] md:w-[40vw] lg:w-[24vw] md:mx-3 mt-5"
-    >
-      {/* Image at the top using <img> with lazy loading */}
-      <div className="h-66 md:h-48 bg-gray-200 relative overflow-hidden">
+    <motion.div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 w-[70vw] md:w-[40vw] lg:w-[24vw] md:mx-3 mt-4">
+      <div className="relative w-full h-[200px] sm:h-[220px] md:h-[180px] lg:h-[160px] xl:h-[150px] overflow-hidden rounded-t-xl">
         {pkg.image ? (
           <img
             src={pkg.image}
             alt={pkg.name}
             loading="lazy"
-            className="object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-400 to-purple-500">
@@ -42,8 +39,6 @@ export const PackageCard = ({ pkg }: PackageCardProps) => {
             <span className="text-sm text-gray-500">{pkg.day} Package</span>
           </div>
         </div>
-
-       
       </div>
     </motion.div>
   );

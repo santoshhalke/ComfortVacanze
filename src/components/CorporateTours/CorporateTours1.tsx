@@ -19,13 +19,13 @@ const CorporateTours1 = () => {
     
     <>
   {/* Hero Section */}
-     <section className="relative text-white py-20 md:py-32 overflow-hidden">
+     <section className="relative text-white py-20 md:py-32 overflow-hidden ">
   {/* Background image using img tag */}
   <img
-    src="/images/CorporateTours/corporate-tours.webp"
+    src="/images/CorporateTours/cor-banner-3.png"
     alt="Corporate Tours"
     loading="lazy"
-    className="absolute inset-0 w-full h-full object-cover object-center -z-10"
+    className="fixed inset-0 w-full h-full object-cover object-[50%_54%] -z-10"
   />
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative mt-5 lg:mt-0">

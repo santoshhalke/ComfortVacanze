@@ -4,12 +4,12 @@ const Fit1 = () => {
   return (
     
     <>
-       <section className="relative text-white py-20 md:py-32 overflow-hidden">
+       <section className="relative text-white py-20 md:py-32 overflow-hidden object-cover object-[50%_30%]">
           <img
-    src="/images/Git/git.webp"
+    src="/images/Fit/fit-banner.png"
     alt="GIT"
     loading="lazy"
-    className="absolute inset-0 w-full h-full object-cover object-center -z-10"
+    className="fixed inset-0 w-full h-full object-cover object-[50%_84%] -z-10"
   />
     
         

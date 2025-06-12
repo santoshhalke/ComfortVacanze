@@ -10,12 +10,12 @@ const EducationalTours1 = () => {
   return (
     
     <>
-    <section className="relative text-white py-20 md:py-32 overflow-hidden">
+    <section className="relative text-white py-20 md:py-32 overflow-hidden object-[10%_10%] object-cover w-full h-full">
           <img
-    src="/images/EducationalTours/educational-tour.webp"
+    src="/images/EducationalTours/educational-regular.png"
     alt="Educational Tours"
     loading="lazy"
-    className="absolute inset-0 w-full h-full object-cover object-center -z-10"
+    className="fixed inset-0 w-full h-full object-cover object-[10%_70%] -z-10"
   />
     
           

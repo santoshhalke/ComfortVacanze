@@ -6,15 +6,11 @@ const Git1 = () => {
     <>
        <section className="relative text-white py-20 md:py-32 overflow-hidden">
           <img
-    src="/images/Git/git.webp"
+    src="/images/Git/GIT.jpg"
     alt="GIT"
     loading="lazy"
-    className="absolute inset-0 w-full h-full object-cover object-center -z-10"
+    className= "fixed inset-0 w-full h-full object-cover object-[50%_44%] -z-10"
   />
-    
-        
-
-         
          <div className="mx-auto lg:mx-[6vw]  px-4 sm:px-6 lg:px-8 relative z-20 mt-5 lg:mt-0">
            <div
            
