@@ -17,7 +17,7 @@ const DestinationsSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const destinations: Destination[] = [
-   {
+    {
       id: 1,
       name: "Singapore",
       image: "/images/Home/UpdatedSINGAPORE.jpg",
@@ -38,10 +38,10 @@ const DestinationsSection: React.FC = () => {
     {
       id: 4,
       name: "Indonesia",
-      image: "/images/Home/UpdatedIndonesia.jpg",
+      image: "/images/Home/indonesia-destination.jpg",
       placeholder: "/images/Home/indonesia-placeholder.webp",
     },
-    // need to change photos from here 
+    // need to change photos from here
     {
       id: 5,
       name: "Vietnam",
@@ -74,9 +74,8 @@ const DestinationsSection: React.FC = () => {
     },
     // ... rest of your destinations
   ];
-  
 
-useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       setIsMobile(width < 768);
@@ -84,8 +83,8 @@ useEffect(() => {
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const scrollLeft = (): void => {
@@ -122,33 +121,33 @@ useEffect(() => {
   };
 
   return (
-  <section className="py-16 relative">
-  <div className=" mx-auto lg:mx-[7vw] px-4 sm:px-6 lg:px-8">
-  <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true }}
-  className="flex flex-col items-center mb-16 z-10" // Center content with flex
->
-  <h2 className="text-2xl md:text-3xl font-bold text-center">
-    Destinations
-  </h2>
-  <motion.div
-    className="h-1 bg-[#EB7C19] mt-2" // No absolute positioning needed
-    initial={{ scaleX: 0 }} // Animate scale instead of width
-    whileInView={{ scaleX: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8, delay: 0.3 }}
-    style={{ 
-      width: "200px", // Fixed width
-      originX: 0.5 // Makes the animation grow from center
-    }}
-  />
-</motion.div>
+    <section className="py-16 relative">
+      <div className=" mx-auto lg:mx-[7vw] px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center mb-16 z-10" // Center content with flex
+        >
+          <h2 className="text-2xl md:text-3xl font-bold text-center">
+            Destinations
+          </h2>
+          <motion.div
+            className="h-1 bg-[#EB7C19] mt-2" // No absolute positioning needed
+            initial={{ scaleX: 0 }} // Animate scale instead of width
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            style={{
+              width: "200px", // Fixed width
+              originX: 0.5, // Makes the animation grow from center
+            }}
+          />
+        </motion.div>
 
         {isMobile ? (
-            <div className="space-y-4 px-4">
+          <div className="space-y-4 px-4">
             {destinations.map((destination) => (
               <motion.div
                 key={destination.id}
@@ -159,7 +158,9 @@ useEffect(() => {
                 className="relative w-full mx-auto lg:mx-[6vw]" // Added max-w-md and mx-auto
               >
                 <div className="bg-white rounded-2xl shadow-md overflow-hidden h-full">
-                  <div className="relative h-48 w-full overflow-hidden"> {/* Increased height */}
+                  <div className="relative h-48 w-full overflow-hidden">
+                    {" "}
+                    {/* Increased height */}
                     <img
                       src={destination.image}
                       alt={destination.name}
@@ -194,7 +195,7 @@ useEffect(() => {
                   onClick={scrollLeft}
                   disabled={scrollPosition === 0}
                   className={`absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-lg z-10 transition-all ${
-                    scrollPosition === 0 ? 'opacity-50 cursor-not-allowed' : ''
+                    scrollPosition === 0 ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                   aria-label="Scroll left"
                 >
@@ -203,11 +204,13 @@ useEffect(() => {
 
                 <button
                   onClick={scrollRight}
-                  disabled={scrollPosition >= destinations.length - (isTablet ? 2 : 3)}
+                  disabled={
+                    scrollPosition >= destinations.length - (isTablet ? 2 : 3)
+                  }
                   className={`absolute right-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full p-2 shadow-lg z-10 transition-all ${
                     scrollPosition >= destinations.length - (isTablet ? 2 : 3)
-                      ? 'opacity-50 cursor-not-allowed'
-                      : ''
+                      ? "opacity-50 cursor-not-allowed"
+                      : ""
                   }`}
                   aria-label="Scroll right"
                 >
@@ -226,7 +229,7 @@ useEffect(() => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true, margin: "0px 0px -100px 0px" }}
                     className={`relative flex-shrink-0 ${
-                      isTablet ? 'w-[calc(50%-12px)]' : 'w-[calc(33.333%-16px)]'
+                      isTablet ? "w-[calc(50%-12px)]" : "w-[calc(33.333%-16px)]"
                     } md:w-[290px]`}
                   >
                     <div className="bg-white rounded-4xl shadow-md overflow-hidden h-full">
@@ -262,24 +265,24 @@ useEffect(() => {
 
             {destinations.length > (isTablet ? 2 : 3) && (
               <div className="flex justify-center mt-6 space-x-2">
-                {Array.from({ length: destinations.length - (isTablet ? 1 : 2) }).map(
-                  (_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToSlide(index)}
-                      className={`w-3 h-3 rounded-full transition-colors ${
-                        scrollPosition === index ? "bg-[#EB7C19]" : "bg-gray-300"
-                      }`}
-                      aria-label={`Go to slide ${index + 1}`}
-                    />
-                  )
-                )}
+                {Array.from({
+                  length: destinations.length - (isTablet ? 1 : 2),
+                }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-colors ${
+                      scrollPosition === index ? "bg-[#EB7C19]" : "bg-gray-300"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
               </div>
             )}
           </>
         )}
       </div>
-  </section>
+    </section>
   );
 };
 

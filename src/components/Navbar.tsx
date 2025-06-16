@@ -5,55 +5,57 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const handleDropdownToggle = (title: string) => {
+    setOpenDropdown((prev) => (prev === title ? null : title));
+  };
+
 
   const navLinks = [
     { title: "Home", href: "/" },
-    { 
-      title: "About", 
-      href: "/about"
+    {
+      title: "Know More",
+      href: "#",
+      dropdown :[
+        { title: "About us", href : "/about"},
+        { title: "Our Offices", href: "/office"},
+      ]
     },
     { title: "Contact", href: "/contact" },
     { title: "Blog", href: "/blog" },
-
-    { title: "Services", href: "#" ,
-        dropdown: [
+    {
+      title: "Services",
+      href: "#",
+      dropdown: [
         { title: "Packages", href: "/package" },
         { title: "FIT", href: "/fit" },
         { title: "GIT", href: "/git" },
         { title: "Educational Tours", href: "/educational-tour" },
         { title: "MICE", href: "/mice" },
-        { title: "Corporate Tours", href: "/corporate-tours" }
-      ]
+        { title: "Corporate Tours", href: "/corporate-tours" },
+      ],
     },
-
     { title: "Gallery", href: "/gallery" },
-
-    
   ];
-
-  const toggleAboutDropdown = () => {
-    setIsAboutDropdownOpen(!isAboutDropdownOpen);
-  };
 
   return (
     <nav className="bg-white fixed w-full top-0 z-50 font-poppins font-regular text-gray-800 px-4 py-2 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-17 items-center">
           {/* Logo */}
-          
-<div className="flex-shrink-0 flex items-center">
-  <Link href="/" className="flex flex-col">
-    <div
-      className="h-14 w-32 bg-no-repeat bg-contain bg-center"
-      style={{ backgroundImage: `url('/images/logo.webp')` }}
-    />
-    <span className="absolute bottom-2 lg:bottom-1 left-23 lg:left-51 text-[9px] md:text-[12px] font-semibold text-gray-800 italic">
-      Vacanze The Comfi Way
-    </span>
-  </Link>
-</div>
 
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="flex flex-col">
+              <div
+                className="h-14 w-32 bg-no-repeat bg-contain bg-center"
+                style={{ backgroundImage: `url('/images/logo.webp')` }}
+              />
+              <span className="absolute bottom-2 lg:bottom-1 left-23 lg:left-51 text-[9px] md:text-[12px] font-semibold text-gray-800 italic">
+                Vacanze The Comfi Way
+              </span>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-10 relative">
@@ -62,24 +64,24 @@ const Navbar = () => {
                 {link.dropdown ? (
                   <div className="relative group">
                     <button
-                      onClick={toggleAboutDropdown}
+                      onClick={ () => handleDropdownToggle(link.title) }
                       className="flex items-center text-gray-600 px-2 py-1 lg:px-3 lg:py-2 text-[10px] lg:text-sm font-medium transition-all hover:border-b-4 hover:border-[#EB7C19]"
                     >
                       {link.title}
-                      {isAboutDropdownOpen ? (
+                      {openDropdown == link.title ? (
                         <ChevronUp className="ml-1 h-4 w-4" />
                       ) : (
                         <ChevronDown className="ml-1 h-4 w-4" />
                       )}
                     </button>
-                    {isAboutDropdownOpen && (
+                    {openDropdown == link.title && (
                       <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
                         {link.dropdown.map((item) => (
                           <Link
                             key={item.title}
                             href={item.href}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onClick={() => setIsAboutDropdownOpen(false)}
+                            onClick={() => setOpenDropdown(null)}
                           >
                             {item.title}
                           </Link>
@@ -112,7 +114,6 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          
         </div>
       </div>
 
@@ -124,17 +125,17 @@ const Navbar = () => {
               {link.dropdown ? (
                 <div className="space-y-1">
                   <button
-                    onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                    onClick={() => handleDropdownToggle (link.title)}
                     className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-gray-600 hover:text-[#EB7C19] hover:bg-gray-50"
                   >
                     {link.title}
-                    {isAboutDropdownOpen ? (
+                    {openDropdown == link.title ? (
                       <ChevronUp className="h-4 w-4" />
                     ) : (
                       <ChevronDown className="h-4 w-4" />
                     )}
                   </button>
-                  {isAboutDropdownOpen && (
+                  {openDropdown == link.title && (
                     <div className="pl-4 space-y-1">
                       {link.dropdown.map((item) => (
                         <Link
@@ -142,7 +143,7 @@ const Navbar = () => {
                           href={item.href}
                           className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-[#EB7C19] hover:bg-gray-50"
                           onClick={() => {
-                            setIsAboutDropdownOpen(false);
+                            setOpenDropdown(null);
                             setIsOpen(false);
                           }}
                         >
